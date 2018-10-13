@@ -6,13 +6,16 @@
     <nomeliga></nomeliga>
     <imagemliga></imagemliga>
     <pais></pais>
-
+    
     <clube>
       <idclube></idclube>
       <nomeclube></nomeclube>
       <imagemclube></imagemclube>
       <posicaoclube></posicaoclube>
       <pontos></pontos>
+      <vitorias></vitorias>
+      <empates></empates>
+      <derrotas></derrotas>
       <golosmarcados></golosmarcados>
       <golossofridos></golossofridos>
       <cidade></cidade>
@@ -25,6 +28,7 @@
           <idjogador></idjogador>
           <nomejogador></nomejogador>
           <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
           <idade></idade>
           <nacionalidade></nacionalidade>
           <posicaojogador></posicaojogador>
