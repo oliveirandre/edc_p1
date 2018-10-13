@@ -11,6 +11,10 @@
       <idclube></idclube>
       <nomeclube></nomeclube>
       <imagemclube></imagemclube>
+      <posicaoclube></posicaoclube>
+      <pontos></pontos>
+      <golosmarcados></golosmarcados>
+      <golossofridos></golossofridos>
       <cidade></cidade>
       <estadio></estadio>
       <anofundacao></anofundacao>
@@ -23,7 +27,7 @@
           <imagemjogador></imagemjogador>
           <idade></idade>
           <nacionalidade></nacionalidade>
-          <posicao></posicao>
+          <posicaojogador></posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
       </jogadores>
