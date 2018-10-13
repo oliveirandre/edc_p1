@@ -2,11 +2,956 @@
 <ligas>
 
   <liga>
-    <idliga></idliga>
-    <nomeliga></nomeliga>
+    <idliga>1</idliga>
+    <nomeliga>Liga NOS</nomeliga>
     <imagemliga></imagemliga>
-    <pais></pais>
-    
+    <pais>Portugal</pais>
+
+    <clube>
+      <idclube>1</idclube>
+      <nomeclube>Benfica</nomeclube>
+      <nomecompleto>Sport Lisboa e Benfica</nomecompleto>
+      <sigla>SLB</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>1</posicaoclube>
+      <pontos>17</pontos>
+      <vitorias>5</vitorias>
+      <empates>2</empates>
+      <derrotas>0</derrotas>
+      <golosmarcados>15</golosmarcados>
+      <golossofridos>5</golossofridos>
+      <cidade>Lisboa</cidade>
+      <estadio>Estádio da Luz</estadio>
+      <anofundacao>1904</anofundacao>
+      <presidente>Luís Filipe Vieira</presidente>
+      <treinador>Rui Vitória</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador>1</idjogador>
+          <nomejogador>Odysseas Vlachodimos</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>99</numerojogador>
+          <idade>24</idade>
+          <nacionalidade>Alemanha</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores>Stuttgart, Panathinaikos</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>2</idjogador>
+          <nomejogador>Svilar</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>1</numerojogador>
+          <idade>19</idade>
+          <nacionalidade>Sérvia</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores>Anderlecht</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>3</idjogador>
+          <nomejogador>André Almeida</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>34</numerojogador>
+          <idade></idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Lateral Direito</posicaojogador>
+          <clubesanteriores>União de Leiria, Belenenses</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>4</idjogador>
+          <nomejogador>Conti</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>2</numerojogador>
+          <idade>24</idade>
+          <nacionalidade>Argentina</nacionalidade>
+          <posicaojogador>Defesa Central</posicaojogador>
+          <clubesanteriores>Colón</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>5</idjogador>
+          <nomejogador>Rúben Dias</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>6</numerojogador>
+          <idade>21</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Defesa Central</posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>6</idjogador>
+          <nomejogador>Grimaldo</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>3</numerojogador>
+          <idade>23</idade>
+          <nacionalidade>Espanha</nacionalidade>
+          <posicaojogador>Lateral Esquerdo</posicaojogador>
+          <clubesanteriores>Barcelona</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>7</idjogador>
+          <nomejogador>Jardel</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>33</numerojogador>
+          <idade>32</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa Central</posicaojogador>
+          <clubesanteriores>Estoril, Olhanense</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>8</idjogador>
+          <nomejogador>Cervi</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>11</numerojogador>
+          <idade>24</idade>
+          <nacionalidade>Argentina</nacionalidade>
+          <posicaojogador>Extremo Esquerdo</posicaojogador>
+          <clubesanteriores>Rosário Central</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>9</idjogador>
+          <nomejogador>Fejsa</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>5</numerojogador>
+          <idade>30</idade>
+          <nacionalidade>Sérvia</nacionalidade>
+          <posicaojogador>Médio Defensivo</posicaojogador>
+          <clubesanteriores>Partizan, Olympiakos</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>10</idjogador>
+          <nomejogador>João Félix</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>79</numerojogador>
+          <idade>18</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio Ofensivo</posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>11</idjogador>
+          <nomejogador>Gabriel</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>8</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Médio Central</posicaojogador>
+          <clubesanteriores>Leganés</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>12</idjogador>
+          <nomejogador>Gedson</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>83</numerojogador>
+          <idade>19</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio Central</posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>13</idjogador>
+          <nomejogador>Pizzi</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>21</numerojogador>
+          <idade>29</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio Central</posicaojogador>
+          <clubesanteriores>Braga, Atlético de Madrid</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>14</idjogador>
+          <nomejogador>Rafa</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>27</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Extremo Esquerdo</posicaojogador>
+          <clubesanteriores>Feirense, Braga</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>15</idjogador>
+          <nomejogador>Salvio</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>18</numerojogador>
+          <idade>28</idade>
+          <nacionalidade>Argentina</nacionalidade>
+          <posicaojogador>Extremo Direito</posicaojogador>
+          <clubesanteriores>Lanús, Atlético de Madrid</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>16</idjogador>
+          <nomejogador>Jonas</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>10</numerojogador>
+          <idade>34</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Santos, Grêmio, Valencia</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>17</idjogador>
+          <nomejogador>Seferovic</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>14</numerojogador>
+          <idade>26</idade>
+          <nacionalidade>Suíça</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Real Sociedad, Eintracht Frankfurt</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>18</idjogador>
+          <nomejogador>Ferreyra</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>19</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Argentina</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Shaktar Donetsk</clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>2</idclube>
+      <nomeclube>Sporting</nomeclube>
+      <nomecompleto>Sporting Clube de Portugal</nomecompleto>
+      <sigla>SCP</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>5</posicaoclube>
+      <pontos>13</pontos>
+      <vitorias>4</vitorias>
+      <empates>1</empates>
+      <derrotas>2</derrotas>
+      <golosmarcados>8</golosmarcados>
+      <golossofridos>3</golossofridos>
+      <cidade>Lisboa</cidade>
+      <estadio>Estádio José Alvalade</estadio>
+      <anofundacao>1906</anofundacao>
+      <presidente>Frederico Varandas</presidente>
+      <treinador>José Peseiro</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>3</idclube>
+      <nomeclube>Braga</nomeclube>
+      <nomecompleto>Sporting Clube de Braga</nomecompleto>
+      <sigla>SCB</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>2</posicaoclube>
+      <pontos>17</pontos>
+      <vitorias>5</vitorias>
+      <empates>2</empates>
+      <derrotas>0</derrotas>
+      <golosmarcados>16</golosmarcados>
+      <golossofridos>7</golossofridos>
+      <cidade>Braga</cidade>
+      <estadio>Estádio Municipal de Braga</estadio>
+      <anofundacao>1921</anofundacao>
+      <presidente>António Salvador</presidente>
+      <treinador>Abel Ferreira</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>4</idclube>
+      <nomeclube>Porto</nomeclube>
+      <nomecompleto>Futebol Clube do Porto</nomecompleto>
+      <sigla>FCP</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>3</posicaoclube>
+      <pontos>15</pontos>
+      <vitorias>5</vitorias>
+      <empates>0</empates>
+      <derrotas>2</derrotas>
+      <golosmarcados>16</golosmarcados>
+      <golossofridos>6</golossofridos>
+      <cidade>Porto</cidade>
+      <estadio>Estádio do Dragão</estadio>
+      <anofundacao>1906</anofundacao>
+      <presidente>Jorge Nuno Pinto da Costa</presidente>
+      <treinador>Sérgio Conceição</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>5</idclube>
+      <nomeclube>Rio Ave</nomeclube>
+      <nomecompleto>Rio Ave Futebol Clube</nomecompleto>
+      <sigla>RAFC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>4</posicaoclube>
+      <pontos>14</pontos>
+      <vitorias>4</vitorias>
+      <empates>2</empates>
+      <derrotas>1</derrotas>
+      <golosmarcados>12</golosmarcados>
+      <golossofridos>8</golossofridos>
+      <cidade>Vila do Conde</cidade>
+      <estadio>Estádio dos Arcos</estadio>
+      <anofundacao>1939</anofundacao>
+      <presidente>António da Silva Campos</presidente>
+      <treinador>Miguel Cardoso</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>6</idclube>
+      <nomeclube>Santa Clara</nomeclube>
+      <nomecompleto>Clube Desportivo Santa Clara</nomecompleto>
+      <sigla>CDSC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>6</posicaoclube>
+      <pontos>11</pontos>
+      <vitorias>3</vitorias>
+      <empates>2</empates>
+      <derrotas>2</derrotas>
+      <golosmarcados>14</golosmarcados>
+      <golossofridos>11</golossofridos>
+      <cidade>Ponta Delgada</cidade>
+      <estadio>Estádio de São Miguel</estadio>
+      <anofundacao>1927</anofundacao>
+      <presidente>Rui Cordeiro</presidente>
+      <treinador>João Henriques</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>7</idclube>
+      <nomeclube>Vitória de Guimarães</nomeclube>
+      <nomecompleto>Vitória Sport Clube</nomecompleto>
+      <sigla>VSC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>7</posicaoclube>
+      <pontos>10</pontos>
+      <vitorias>3</vitorias>
+      <empates>1</empates>
+      <derrotas>3</derrotas>
+      <golosmarcados>12</golosmarcados>
+      <golossofridos>11</golossofridos>
+      <cidade>Guimarães</cidade>
+      <estadio>D. Afonso Henriques</estadio>
+      <anofundacao>1922</anofundacao>
+      <presidente>Júlio Mendes</presidente>
+      <treinador>Luís Castro</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>8</idclube>
+      <nomeclube>Marítimo</nomeclube>
+      <nomecompleto>Club Sport Marítimo</nomecompleto>
+      <sigla>CSM</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>8</posicaoclube>
+      <pontos>10</pontos>
+      <vitorias>3</vitorias>
+      <empates>1</empates>
+      <derrotas>3</derrotas>
+      <golosmarcados>6</golosmarcados>
+      <golossofridos>9</golossofridos>
+      <cidade>Funchal</cidade>
+      <estadio>Estádio do Marítimo</estadio>
+      <anofundacao>1910</anofundacao>
+      <presidente>José Carlos Pereira</presidente>
+      <treinador>Cláudio Braga</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>9</idclube>
+      <nomeclube>Feirense</nomeclube>
+      <nomecompleto>Clube Desportivo Feirense</nomecompleto>
+      <sigla>CDF</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>9</posicaoclube>
+      <pontos>9</pontos>
+      <vitorias>2</vitorias>
+      <empates>3</empates>
+      <derrotas>2</derrotas>
+      <golosmarcados>4</golosmarcados>
+      <golossofridos>3</golossofridos>
+      <cidade>Santa Maria da Feira</cidade>
+      <estadio>Marcolino de Castro</estadio>
+      <anofundacao>1918</anofundacao>
+      <presidente>Rodrigo Nunes</presidente>
+      <treinador>Nuno Manta Santos</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>10</idclube>
+      <nomeclube>Vitória de Setúbal</nomeclube>
+      <nomecompleto>Vitória Futebol Clube</nomecompleto>
+      <sigla>VFC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>10</posicaoclube>
+      <pontos>9</pontos>
+      <vitorias>2</vitorias>
+      <empates>2</empates>
+      <derrotas>3</derrotas>
+      <golosmarcados>8</golosmarcados>
+      <golossofridos>7</golossofridos>
+      <cidade>Setúbal</cidade>
+      <estadio>Estádio do Bonfim</estadio>
+      <anofundacao>1910</anofundacao>
+      <presidente>Vitor Hugo Valente</presidente>
+      <treinador>Lito Vidigal</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>11</idclube>
+      <nomeclube>Boavista</nomeclube>
+      <nomecompleto>Boavista Futebol Clube</nomecompleto>
+      <sigla>BFC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>11</posicaoclube>
+      <pontos>7</pontos>
+      <vitorias>2</vitorias>
+      <empates>1</empates>
+      <derrotas>4</derrotas>
+      <golosmarcados>8</golosmarcados>
+      <golossofridos>11</golossofridos>
+      <cidade>Porto</cidade>
+      <estadio>Estádio do Bessa</estadio>
+      <anofundacao>1903</anofundacao>
+      <presidente>João Loureiro</presidente>
+      <treinador>Jorge Simão</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>12</idclube>
+      <nomeclube>Belenenses</nomeclube>
+      <nomecompleto>Clube de Futebol Os Belenenses</nomecompleto>
+      <sigla>CFB</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>12</posicaoclube>
+      <pontos>7</pontos>
+      <vitorias>1</vitorias>
+      <empates>4</empates>
+      <derrotas>2</derrotas>
+      <golosmarcados>4</golosmarcados>
+      <golossofridos>7</golossofridos>
+      <cidade>Lisboa</cidade>
+      <estadio>Estádio do Restelo</estadio>
+      <anofundacao>1919</anofundacao>
+      <presidente>Patrick Morais de Carvalho</presidente>
+      <treinador>Nuno Oliveira</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>13</idclube>
+      <nomeclube>Portimonense</nomeclube>
+      <nomecompleto>Portimonense Sporting Clube</nomecompleto>
+      <sigla>PSC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>13</posicaoclube>
+      <pontos>7</pontos>
+      <vitorias>2</vitorias>
+      <empates>1</empates>
+      <derrotas>4</derrotas>
+      <golosmarcados>10</golosmarcados>
+      <golossofridos>15</golossofridos>
+      <cidade>Portimão</cidade>
+      <estadio>Estádio Municipal de Portimão</estadio>
+      <anofundacao>1914</anofundacao>
+      <presidente>Fernando Rocha</presidente>
+      <treinador>António Folha</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>14</idclube>
+      <nomeclube>Chaves</nomeclube>
+      <nomecompleto>Grupo Desportivo de Chaves</nomecompleto>
+      <sigla>GDC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>14</posicaoclube>
+      <pontos>7</pontos>
+      <vitorias>2</vitorias>
+      <empates>1</empates>
+      <derrotas>4</derrotas>
+      <golosmarcados>7</golosmarcados>
+      <golossofridos>12</golossofridos>
+      <cidade>Chaves</cidade>
+      <estadio>Estádio Municipal de Chaves</estadio>
+      <anofundacao>1949</anofundacao>
+      <presidente>Bruno Carvalho</presidente>
+      <treinador>Daniel Ramos</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>15</idclube>
+      <nomeclube>Moreirense</nomeclube>
+      <nomecompleto>Moreirense Futebol Clube</nomecompleto>
+      <sigla>MFC</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>15</posicaoclube>
+      <pontos>7</pontos>
+      <vitorias>2</vitorias>
+      <empates>1</empates>
+      <derrotas>4</derrotas>
+      <golosmarcados>5</golosmarcados>
+      <golossofridos>13</golossofridos>
+      <cidade>Guimarães</cidade>
+      <estadio>Comendador Joaquim de Almeida Freitas</estadio>
+      <anofundacao>1938</anofundacao>
+      <presidente>Vitor Magalhães</presidente>
+      <treinador>Petit</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>16</idclube>
+      <nomeclube>Tondela</nomeclube>
+      <nomecompleto>Clube Desportivo de Tondela</nomecompleto>
+      <sigla>CDT</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>16</posicaoclube>
+      <pontos>6</pontos>
+      <vitorias>1</vitorias>
+      <empates>3</empates>
+      <derrotas>3</derrotas>
+      <golosmarcados>6</golosmarcados>
+      <golossofridos>7</golossofridos>
+      <cidade>Tondela</cidade>
+      <estadio>Estádio João Cardoso</estadio>
+      <anofundacao>1933</anofundacao>
+      <presidente>Gilberto Neves Coimbra</presidente>
+      <treinador>Pepa</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>17</idclube>
+      <nomeclube>Nacional</nomeclube>
+      <nomecompleto>Clube Desportivo Nacional</nomecompleto>
+      <sigla>CDN</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>17</posicaoclube>
+      <pontos>5</pontos>
+      <vitorias>1</vitorias>
+      <empates>2</empates>
+      <derrotas>4</derrotas>
+      <golosmarcados>6</golosmarcados>
+      <golossofridos>15</golossofridos>
+      <cidade>Funchal</cidade>
+      <estadio>Estádio da Madeira</estadio>
+      <anofundacao>1910</anofundacao>
+      <presidente>Rui António Macedo Alves</presidente>
+      <treinador>Costinha</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+    <clube>
+      <idclube>18</idclube>
+      <nomeclube>Aves</nomeclube>
+      <nomecompleto>Clube Desportivo das Aves</nomecompleto>
+      <sigla>CDA</sigla>
+      <imagemclube></imagemclube>
+      <posicaoclube>18</posicaoclube>
+      <pontos>4</pontos>
+      <vitorias>1</vitorias>
+      <empates>1</empates>
+      <derrotas>5</derrotas>
+      <golosmarcados>6</golosmarcados>
+      <golossofridos>11</golossofridos>
+      <cidade>Santo Tirso</cidade>
+      <estadio>Estádio do Clube Desportivo das Aves</estadio>
+      <anofundacao>1930</anofundacao>
+      <presidente>Armando Silva</presidente>
+      <treinador>José Mota</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+
+  </liga>
+
+  <liga>
+    <idliga>2</idliga>
+    <nomeliga>Premier League</nomeliga>
+    <imagemliga></imagemliga>
+    <pais>Inglaterra</pais>
+
     <clube>
       <idclube></idclube>
       <nomeclube></nomeclube>
@@ -38,5 +983,4 @@
     </clube>
 
   </liga>
-
 </ligas>
