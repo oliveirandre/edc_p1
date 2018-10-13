@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ligas>
+
+  <liga>
+    <idliga></idliga>
+    <nomeliga></nomeliga>
+    <imagemliga></imagemliga>
+    <pais></pais>
+
+    <clube>
+      <idclube></idclube>
+      <nomeclube></nomeclube>
+      <imagemclube></imagemclube>
+      <cidade></cidade>
+      <estadio></estadio>
+      <anofundacao></anofundacao>
+      <presidente></presidente>
+      <treinador></treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicao></posicao>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+  </liga>
+
+</ligas>
