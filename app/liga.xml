@@ -431,7 +431,117 @@
       <treinador>Abel Ferreira</treinador>
       <jogadores>
         <jogador>
-          <idjogador></idjogador>
+          <idjogador>60</idjogador>
+          <nomejogador>Tiago Sá</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>12</numerojogador>
+          <idade>23</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>61</idjogador>
+          <nomejogador>Marafona</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>28</numerojogador>
+          <idade>31</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores>Paços Ferreira, Moreirense</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>62</idjogador>
+          <nomejogador>Marcelo Goiano</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>87</numerojogador>
+          <idade>31</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Grêmio</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>63</idjogador>
+          <nomejogador>Pablo Santos</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>14</numerojogador>
+          <idade>26</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Marítimo</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>64</idjogador>
+          <nomejogador>Bruno Viana</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>36</numerojogador>
+          <idade>23</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Olympiacos</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>65</idjogador>
+          <nomejogador>Nuno Sequeira</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>5</numerojogador>
+          <idade>28</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Nacional, Leixões</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>66</idjogador>
+          <nomejogador>Ricardo Esgaio</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>47</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Sporting</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>67</idjogador>
+          <nomejogador>João Novais</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>17</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Rio Ave, Leixões</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>68</idjogador>
+          <nomejogador>Claudemir</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>25</numerojogador>
+          <idade>30</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Club Brugge</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>69</idjogador>
+          <nomejogador>Ricardo Horta</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>21</numerojogador>
+          <idade>24</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Málaga</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>70</idjogador>
+          <nomejogador>Wilson Eduardo</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>7</numerojogador>
+          <idade>23</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Sporting</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>71</idjogador>
           <nomejogador></nomejogador>
           <imagemjogador></imagemjogador>
           <numerojogador></numerojogador>
@@ -439,6 +549,76 @@
           <nacionalidade></nacionalidade>
           <posicaojogador></posicaojogador>
           <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>72</idjogador>
+          <nomejogador>Dyego Sousa</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>99</numerojogador>
+          <idade>29</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Marítimo</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>73</idjogador>
+          <nomejogador>Lucas Cunha</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>4</numerojogador>
+          <idade>21</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Mirassol</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>74</idjogador>
+          <nomejogador>Eduardo Teixeira</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>11</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Estoril</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>75</idjogador>
+          <nomejogador>Paulinho</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>20</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Gil Vicente</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>76</idjogador>
+          <nomejogador>Fábio Martins</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>26</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>77</idjogador>
+          <nomejogador>Fransérgio</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>27</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Marítimo</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>78</idjogador>
+          <nomejogador>João Palhinha</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>60</numerojogador>
+          <idade>23</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Sporting</clubesanteriores>
         </jogador>
       </jogadores>
     </clube>
