@@ -229,204 +229,184 @@
       <treinador>José Peseiro</treinador>
       <jogadores>
         <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
+          <idjogador>30</idjogador>
+          <nomejogador>Romain Salin</nomejogador>
           <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
+          <numerojogador>19</numerojogador>
+          <idade>34</idade>
+          <nacionalidade>França</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores>Guingamp, Marítimo, Rio Ave</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>31</idjogador>
+          <nomejogador>Renan Ribeiro</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>40</numerojogador>
+          <idade>28</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores>Estoril, São Paulo, Atlético Mineiro</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>32</idjogador>
+          <nomejogador>Marcos Acuña</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>9</numerojogador>
+          <idade>26</idade>
+          <nacionalidade>Argentina</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Racing Club</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>33</idjogador>
+          <nomejogador>André Pinto</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>6</numerojogador>
+          <idade>29</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Braga</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>34</idjogador>
+          <nomejogador>Sebastián Coates</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>4</numerojogador>
+          <idade>28</idade>
+          <nacionalidade>Uruguai</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Liverpool</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>35</idjogador>
+          <nomejogador>Stefan Ristovski</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>13</numerojogador>
+          <idade>26</idade>
+          <nacionalidade>Macedónia</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Parma</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>36</idjogador>
+          <nomejogador>Raphinha</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>21</numerojogador>
+          <idade>22</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Guimarães</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>37</idjogador>
+          <nomejogador>Bruno Fernandes</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>8</numerojogador>
+          <idade>24</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Sampadoria, Udinese</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>38</idjogador>
+          <nomejogador>Rodrigo Battaglia</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>16</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Argentina</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Braga</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>39</idjogador>
+          <nomejogador>Nemanja Gudelj</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>86</numerojogador>
+          <idade>26</idade>
+          <nacionalidade>Sérvia</nacionalidade>
+          <posicaojogador>Médio</posicaojogador>
+          <clubesanteriores>Ajax</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>40</idjogador>
+          <nomejogador>Fredy Montero</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>10</numerojogador>
+          <idade>31</idade>
+          <nacionalidade>Colombia</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Deportivo Cali</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>41</idjogador>
+          <nomejogador>Jovane Cabral</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>77</numerojogador>
+          <idade>20</idade>
+          <nacionalidade>Cabo Verde</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
         <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
+          <idjogador>42</idjogador>
+          <nomejogador>Marcelo</nomejogador>
           <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
+          <numerojogador>2</numerojogador>
+          <idade>29</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Rio Ave</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>43</idjogador>
+          <nomejogador>Jefferson</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>5</numerojogador>
+          <idade>30</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa</posicaojogador>
+          <clubesanteriores>Estoril</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>44</idjogador>
+          <nomejogador>Nani</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>17</numerojogador>
+          <idade>31</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Valencia, Fenerbahçe, Manchester United</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>45</idjogador>
+          <nomejogador>Carlos Mané</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>18</numerojogador>
+          <idade>24</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
         <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
+          <idjogador>46</idjogador>
+          <nomejogador>Abdoulay Diaby</nomejogador>
           <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
+          <numerojogador>23</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Mali</nacionalidade>
+          <posicaojogador>Avançado</posicaojogador>
+          <clubesanteriores>Lille, Club Brugge</clubesanteriores>
         </jogador>
         <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
+          <idjogador>47</idjogador>
+          <nomejogador>Radosav Petrovic</nomejogador>
           <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
+          <numerojogador>25</numerojogador>
+          <idade>29</idade>
+          <nacionalidade>Sérvia</nacionalidade>
+          <posicaojogador>Médop</posicaojogador>
+          <clubesanteriores>Dynamo Kyiv</clubesanteriores>
         </jogador>
       </jogadores>
     </clube>
