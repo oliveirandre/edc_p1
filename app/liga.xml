@@ -643,14 +643,174 @@
       <treinador>Sérgio Conceição</treinador>
       <jogadores>
         <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
+          <idjogador>90</idjogador>
+          <nomejogador>Iker Casillas</nomejogador>
           <imagemjogador></imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
+          <numerojogador>1</numerojogador>
+          <idade>37</idade>
+          <nacionalidade>Espanha</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores>Real Madrid</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>91</idjogador>
+          <nomejogador>Vaná Alves</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>26</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Guarda-Redes</posicaojogador>
+          <clubesanteriores>Feirense, Coritiba FC</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>92</idjogador>
+          <nomejogador>Felipe</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>28</numerojogador>
+          <idade>29</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa Central</posicaojogador>
+          <clubesanteriores>Corinthians</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>93</idjogador>
+          <nomejogador>Éder Militão</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>3</numerojogador>
+          <idade>20</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Defesa Central</posicaojogador>
+          <clubesanteriores>São Paulo</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>94</idjogador>
+          <nomejogador>Diogo Leite</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>4</numerojogador>
+          <idade>19</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Defesa Central</posicaojogador>
+          <clubesanteriores>Porto B</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>95</idjogador>
+          <nomejogador>Alex Telles</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>13</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Lateral Esquerdo</posicaojogador>
+          <clubesanteriores>Galatasaray, Inter, Grêmio</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>96</idjogador>
+          <nomejogador>Maxi Pereira</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>2</numerojogador>
+          <idade>34</idade>
+          <nacionalidade>Uruguai</nacionalidade>
+          <posicaojogador>Lateral Direito</posicaojogador>
+          <clubesanteriores>Benfica, Defensor</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>97</idjogador>
+          <nomejogador>Danilo Pereira</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>22</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio Defensivo</posicaojogador>
+          <clubesanteriores>Marítimo, Parma, Roda JC, Aris Saloniki</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>98</idjogador>
+          <nomejogador>Héctor Herrera</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>16</numerojogador>
+          <idade>28</idade>
+          <nacionalidade>México</nacionalidade>
+          <posicaojogador>Médio Central</posicaojogador>
+          <clubesanteriores>CF Pachuca</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>99</idjogador>
+          <nomejogador>Sérgio Oliveira</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>16</numerojogador>
+          <idade>26</idade>
+          <nacionalidade>Portugal</nacionalidade>
+          <posicaojogador>Médio Central</posicaojogador>
+          <clubesanteriores>FC Nantes, Paços Ferreira, Penafiel</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>100</idjogador>
+          <nomejogador>Óliver Torres</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>10</numerojogador>
+          <idade>23</idade>
+          <nacionalidade>Espanha</nacionalidade>
+          <posicaojogador>Médio Ofensivo</posicaojogador>
+          <clubesanteriores>Atlético Madrid, FC Villarreal</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>101</idjogador>
+          <nomejogador>Otávio</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>25</numerojogador>
+          <idade>23</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Médio Ofensivo</posicaojogador>
+          <clubesanteriores>Vitória SC, Internacional</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>102</idjogador>
+          <nomejogador>Yacine Brahimi</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>8</numerojogador>
+          <idade>28</idade>
+          <nacionalidade>Argélia</nacionalidade>
+          <posicaojogador>Extremo Esquerdo</posicaojogador>
+          <clubesanteriores>Granada CF, Rennes</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>103</idjogador>
+          <nomejogador>Jesús Corona</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>17</numerojogador>
+          <idade>25</idade>
+          <nacionalidade>México</nacionalidade>
+          <posicaojogador>Extremo Direito</posicaojogador>
+          <clubesanteriores>FC Twente, Monterrey</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>104</idjogador>
+          <nomejogador>Moussa Marega</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>11</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Mali</nacionalidade>
+          <posicaojogador>Segundo Avançado</posicaojogador>
+          <clubesanteriores>Vitória SC, Marítimo, Esperance, SC Amiens</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>105</idjogador>
+          <nomejogador>Vincent Aboubakar</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>9</numerojogador>
+          <idade>26</idade>
+          <nacionalidade>Camarões</nacionalidade>
+          <posicaojogador>Ponta de Lança</posicaojogador>
+          <clubesanteriores>Besiktas, FC Lorient</clubesanteriores>
+        </jogador>
+        <jogador>
+          <idjogador>106</idjogador>
+          <nomejogador>Tiquinho Soares</nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador>29</numerojogador>
+          <idade>27</idade>
+          <nacionalidade>Brasil</nacionalidade>
+          <posicaojogador>Ponta de Lança</posicaojogador>
+          <clubesanteriores>Vitória SC, Paraibano-PB, Nacional</clubesanteriores>
         </jogador>
       </jogadores>
     </clube>
