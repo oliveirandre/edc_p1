@@ -4,7 +4,8 @@
   <liga>
     <idliga>1</idliga>
     <nomeliga>Liga NOS</nomeliga>
-    <imagemliga></imagemliga>
+    <imagemliga>ligas/portugalprimeira.png</imagemliga>
+    <imagempais>ligas/portugal.png</imagempais>
     <pais>Portugal</pais>
 
     <clube>
@@ -1269,7 +1270,8 @@
   <liga>
     <idliga>2</idliga>
     <nomeliga>Premier League</nomeliga>
-    <imagemliga></imagemliga>
+    <imagemliga>ligas/inglaterraprimeira.png</imagemliga>
+    <imagempais>ligas/inglaterra.png</imagempais>
     <pais>Inglaterra</pais>
 
     <clube>
