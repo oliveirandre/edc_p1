@@ -31,3 +31,29 @@ def ligas(request):
         'paisn' :info4,
     }
     return render(request, 'index.html', tparams)
+
+def tabelas(request):
+    fn = "app/liga.xml"
+    tree = ET.parse(fn)
+    info = dict()
+    info2 = dict()
+    info3 = dict()
+    info4 = dict()
+    if 'idliga' in request.GET:
+        query = '//liga[@idliga=idliga'.format(request.GET['idliga'])
+        print('deu')
+    else:
+        query = ''
+    curs = tree.xpath(query)
+    for c in curs:
+        info[c.find('idclube').text] = c.find('nomeclube').text
+        info2[c.find('idclube').text] = c.find('vitorias').text
+        info3[c.find('idclube').text] = c.find('empates').text
+        info4[c.find('idclube').text] = c.find('derrotas').text
+    tparams = {
+        'nomeclube': info,
+        'vitorias' : info2,
+        'empates' : info3,
+        'derrotas' : info4,
+    }
+    return render(request, 'tabela.html', tparams)
