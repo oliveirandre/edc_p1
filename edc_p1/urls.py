@@ -18,5 +18,6 @@ from app import views
 
 urlpatterns = [
         path('', views.ligas, name='liga'),
-        path('tabela', views.tabelas, name='tabelas')
+        path('tabela', views.tabelas, name='tabelas'),
+        path('index', views.ligas, name='liga')
 ]
