@@ -23,7 +23,7 @@
 
                                                                         <a href="javascript:void(0)"><span><image src="{% static 'img/' %}{{ y|lower }}" width="20" heigth="10"> {{ v }}</span></a>
                                                                         <ul class="submenu">
-                                                                            <li><a href="index.html"><image src="{% static 'img/' %}{{ y2|lower }}" width="30" heigth="15"> {{ y1 }}</a></li>
+                                                                            <li><a href='tabela?idliga={{ k }}'><image src="{% static 'img/' %}{{ y2|lower }}" width="30" heigth="15"> {{ y1 }}</a></li>
                                                                         </ul>
                                                                     </li>
                                                              {% endif %}
@@ -68,7 +68,7 @@
                                     <div class="col-lg-12 mt-5" align="center">
                                         <h4><image src="{% static 'img/' %}{{ y|lower }}" width="50px" heigth="25px"> {{ v }}</h4>
                                         </br>
-                                        <button type="button" class="btn btn-rounded btn-light"><image src="{% static 'img/' %}{{ y2|lower }}" width="40" heigth="20">  {{ y1 }}</button>
+                                        <button onclick="location.href='tabela?idliga={{ k }}';" type="button" class="btn btn-rounded btn-light"><image src="{% static 'img/' %}{{ y2|lower }}" width="40" heigth="20">  {{ y1 }}</button>
                                     </div>
                                 {% endif %}
                             {% endif %}

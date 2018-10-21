@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ligas>
 
-  <liga>
-    <idliga>1</idliga>
+  <liga idliga="1">
+      <idliga>1</idliga>
     <nomeliga>Liga NOS</nomeliga>
     <imagemliga>ligas/portugalprimeira.png</imagemliga>
     <imagempais>ligas/portugal.png</imagempais>
@@ -13,7 +13,7 @@
       <nomeclube>Benfica</nomeclube>
       <nomecompleto>Sport Lisboa e Benfica</nomecompleto>
       <sigla>SLB</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/benfica.svg</imagemclube>
       <posicaoclube>1</posicaoclube>
       <pontos>17</pontos>
       <vitorias>5</vitorias>
@@ -215,7 +215,7 @@
       <nomeclube>Sporting</nomeclube>
       <nomecompleto>Sporting Clube de Portugal</nomecompleto>
       <sigla>SCP</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/sporting.svg</imagemclube>
       <posicaoclube>5</posicaoclube>
       <pontos>13</pontos>
       <vitorias>4</vitorias>
@@ -417,7 +417,7 @@
       <nomeclube>Braga</nomeclube>
       <nomecompleto>Sporting Clube de Braga</nomecompleto>
       <sigla>SCB</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/braga.svg</imagemclube>
       <posicaoclube>2</posicaoclube>
       <pontos>17</pontos>
       <vitorias>5</vitorias>
@@ -629,7 +629,7 @@
       <nomeclube>Porto</nomeclube>
       <nomecompleto>Futebol Clube do Porto</nomecompleto>
       <sigla>FCP</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/porto.svg</imagemclube>
       <posicaoclube>3</posicaoclube>
       <pontos>15</pontos>
       <vitorias>5</vitorias>
@@ -821,7 +821,7 @@
       <nomeclube>Rio Ave</nomeclube>
       <nomecompleto>Rio Ave Futebol Clube</nomecompleto>
       <sigla>RAFC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/rioave.svg</imagemclube>
       <posicaoclube>4</posicaoclube>
       <pontos>14</pontos>
       <vitorias>4</vitorias>
@@ -853,7 +853,7 @@
       <nomeclube>Santa Clara</nomeclube>
       <nomecompleto>Clube Desportivo Santa Clara</nomecompleto>
       <sigla>CDSC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/santaclara.svg</imagemclube>
       <posicaoclube>6</posicaoclube>
       <pontos>11</pontos>
       <vitorias>3</vitorias>
@@ -885,7 +885,7 @@
       <nomeclube>Vitória de Guimarães</nomeclube>
       <nomecompleto>Vitória Sport Clube</nomecompleto>
       <sigla>VSC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/guimaraes.svg</imagemclube>
       <posicaoclube>7</posicaoclube>
       <pontos>10</pontos>
       <vitorias>3</vitorias>
@@ -917,7 +917,7 @@
       <nomeclube>Marítimo</nomeclube>
       <nomecompleto>Club Sport Marítimo</nomecompleto>
       <sigla>CSM</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/maritimo.svg</imagemclube>
       <posicaoclube>8</posicaoclube>
       <pontos>10</pontos>
       <vitorias>3</vitorias>
@@ -949,7 +949,7 @@
       <nomeclube>Feirense</nomeclube>
       <nomecompleto>Clube Desportivo Feirense</nomecompleto>
       <sigla>CDF</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/feirense.svg</imagemclube>
       <posicaoclube>9</posicaoclube>
       <pontos>9</pontos>
       <vitorias>2</vitorias>
@@ -981,7 +981,7 @@
       <nomeclube>Vitória de Setúbal</nomeclube>
       <nomecompleto>Vitória Futebol Clube</nomecompleto>
       <sigla>VFC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/setubal.svg</imagemclube>
       <posicaoclube>10</posicaoclube>
       <pontos>9</pontos>
       <vitorias>2</vitorias>
@@ -1013,7 +1013,7 @@
       <nomeclube>Boavista</nomeclube>
       <nomecompleto>Boavista Futebol Clube</nomecompleto>
       <sigla>BFC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/boavista.svg</imagemclube>
       <posicaoclube>11</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1045,7 +1045,7 @@
       <nomeclube>Belenenses</nomeclube>
       <nomecompleto>Clube de Futebol Os Belenenses</nomecompleto>
       <sigla>CFB</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/belenenses.svg</imagemclube>
       <posicaoclube>12</posicaoclube>
       <pontos>7</pontos>
       <vitorias>1</vitorias>
@@ -1077,7 +1077,7 @@
       <nomeclube>Portimonense</nomeclube>
       <nomecompleto>Portimonense Sporting Clube</nomecompleto>
       <sigla>PSC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/portimonense.svg</imagemclube>
       <posicaoclube>13</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1109,7 +1109,7 @@
       <nomeclube>Chaves</nomeclube>
       <nomecompleto>Grupo Desportivo de Chaves</nomecompleto>
       <sigla>GDC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/chaves.svg</imagemclube>
       <posicaoclube>14</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1141,7 +1141,7 @@
       <nomeclube>Moreirense</nomeclube>
       <nomecompleto>Moreirense Futebol Clube</nomecompleto>
       <sigla>MFC</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/moreirense.svg</imagemclube>
       <posicaoclube>15</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1173,7 +1173,7 @@
       <nomeclube>Tondela</nomeclube>
       <nomecompleto>Clube Desportivo de Tondela</nomecompleto>
       <sigla>CDT</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/tondela.svg</imagemclube>
       <posicaoclube>16</posicaoclube>
       <pontos>6</pontos>
       <vitorias>1</vitorias>
@@ -1205,7 +1205,7 @@
       <nomeclube>Nacional</nomeclube>
       <nomecompleto>Clube Desportivo Nacional</nomecompleto>
       <sigla>CDN</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/nacional.svg</imagemclube>
       <posicaoclube>17</posicaoclube>
       <pontos>5</pontos>
       <vitorias>1</vitorias>
@@ -1237,7 +1237,7 @@
       <nomeclube>Aves</nomeclube>
       <nomecompleto>Clube Desportivo das Aves</nomecompleto>
       <sigla>CDA</sigla>
-      <imagemclube></imagemclube>
+      <imagemclube>primeiraLiga/aves.svg</imagemclube>
       <posicaoclube>18</posicaoclube>
       <pontos>4</pontos>
       <vitorias>1</vitorias>
@@ -1267,7 +1267,7 @@
 
   </liga>
 
-  <liga>
+  <liga idliga="2">
     <idliga>2</idliga>
     <nomeliga>Premier League</nomeliga>
     <imagemliga>ligas/inglaterraprimeira.png</imagemliga>
