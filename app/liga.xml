@@ -821,7 +821,7 @@
       <nomeclube>Rio Ave</nomeclube>
       <nomecompleto>Rio Ave Futebol Clube</nomecompleto>
       <sigla>RAFC</sigla>
-      <imagemclube>primeiraLiga/rioave.svg</imagemclube>
+      <imagemclube>primeiraLiga/rioave.png</imagemclube>
       <posicaoclube>4</posicaoclube>
       <pontos>14</pontos>
       <vitorias>4</vitorias>
@@ -853,7 +853,7 @@
       <nomeclube>Santa Clara</nomeclube>
       <nomecompleto>Clube Desportivo Santa Clara</nomecompleto>
       <sigla>CDSC</sigla>
-      <imagemclube>primeiraLiga/santaclara.svg</imagemclube>
+      <imagemclube>primeiraLiga/santaclara.png</imagemclube>
       <posicaoclube>6</posicaoclube>
       <pontos>11</pontos>
       <vitorias>3</vitorias>
@@ -917,7 +917,7 @@
       <nomeclube>Marítimo</nomeclube>
       <nomecompleto>Club Sport Marítimo</nomecompleto>
       <sigla>CSM</sigla>
-      <imagemclube>primeiraLiga/maritimo.svg</imagemclube>
+      <imagemclube>primeiraLiga/maritimo.png</imagemclube>
       <posicaoclube>8</posicaoclube>
       <pontos>10</pontos>
       <vitorias>3</vitorias>
@@ -949,7 +949,7 @@
       <nomeclube>Feirense</nomeclube>
       <nomecompleto>Clube Desportivo Feirense</nomecompleto>
       <sigla>CDF</sigla>
-      <imagemclube>primeiraLiga/feirense.svg</imagemclube>
+      <imagemclube>primeiraLiga/feirense.png</imagemclube>
       <posicaoclube>9</posicaoclube>
       <pontos>9</pontos>
       <vitorias>2</vitorias>
@@ -981,7 +981,7 @@
       <nomeclube>Vitória de Setúbal</nomeclube>
       <nomecompleto>Vitória Futebol Clube</nomecompleto>
       <sigla>VFC</sigla>
-      <imagemclube>primeiraLiga/setubal.svg</imagemclube>
+      <imagemclube>primeiraLiga/setubal.png</imagemclube>
       <posicaoclube>10</posicaoclube>
       <pontos>9</pontos>
       <vitorias>2</vitorias>
@@ -1013,7 +1013,7 @@
       <nomeclube>Boavista</nomeclube>
       <nomecompleto>Boavista Futebol Clube</nomecompleto>
       <sigla>BFC</sigla>
-      <imagemclube>primeiraLiga/boavista.svg</imagemclube>
+      <imagemclube>primeiraLiga/boavista.png</imagemclube>
       <posicaoclube>11</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1045,7 +1045,7 @@
       <nomeclube>Belenenses</nomeclube>
       <nomecompleto>Clube de Futebol Os Belenenses</nomecompleto>
       <sigla>CFB</sigla>
-      <imagemclube>primeiraLiga/belenenses.svg</imagemclube>
+      <imagemclube>primeiraLiga/belenenses.png</imagemclube>
       <posicaoclube>12</posicaoclube>
       <pontos>7</pontos>
       <vitorias>1</vitorias>
@@ -1077,7 +1077,7 @@
       <nomeclube>Portimonense</nomeclube>
       <nomecompleto>Portimonense Sporting Clube</nomecompleto>
       <sigla>PSC</sigla>
-      <imagemclube>primeiraLiga/portimonense.svg</imagemclube>
+      <imagemclube>primeiraLiga/portimonense.png</imagemclube>
       <posicaoclube>13</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1109,7 +1109,7 @@
       <nomeclube>Chaves</nomeclube>
       <nomecompleto>Grupo Desportivo de Chaves</nomecompleto>
       <sigla>GDC</sigla>
-      <imagemclube>primeiraLiga/chaves.svg</imagemclube>
+      <imagemclube>primeiraLiga/chaves.png</imagemclube>
       <posicaoclube>14</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1141,7 +1141,7 @@
       <nomeclube>Moreirense</nomeclube>
       <nomecompleto>Moreirense Futebol Clube</nomecompleto>
       <sigla>MFC</sigla>
-      <imagemclube>primeiraLiga/moreirense.svg</imagemclube>
+      <imagemclube>primeiraLiga/moreirense.png</imagemclube>
       <posicaoclube>15</posicaoclube>
       <pontos>7</pontos>
       <vitorias>2</vitorias>
@@ -1173,7 +1173,7 @@
       <nomeclube>Tondela</nomeclube>
       <nomecompleto>Clube Desportivo de Tondela</nomecompleto>
       <sigla>CDT</sigla>
-      <imagemclube>primeiraLiga/tondela.svg</imagemclube>
+      <imagemclube>primeiraLiga/tondela.png</imagemclube>
       <posicaoclube>16</posicaoclube>
       <pontos>6</pontos>
       <vitorias>1</vitorias>
@@ -1237,7 +1237,7 @@
       <nomeclube>Aves</nomeclube>
       <nomecompleto>Clube Desportivo das Aves</nomecompleto>
       <sigla>CDA</sigla>
-      <imagemclube>primeiraLiga/aves.svg</imagemclube>
+      <imagemclube>primeiraLiga/aves.png</imagemclube>
       <posicaoclube>18</posicaoclube>
       <pontos>4</pontos>
       <vitorias>1</vitorias>
