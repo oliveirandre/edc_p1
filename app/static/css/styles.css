@@ -915,7 +915,7 @@ ul.breadcrumbs {
 }
 
 table.dbkit-table {
-    width: 100%;
+    width: 100px;
 }
 
 table.dbkit-table tr {
@@ -2825,5 +2825,7 @@ table.dataTable thead td {
     font-size: 16px;
     color: #555;
 }
+
+
 
 /*-------------------- END Offset Sidebar ------------------- */

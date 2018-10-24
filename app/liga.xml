@@ -2,19 +2,19 @@
 <ligas>
 
   <liga idliga="1">
-      <idliga>1</idliga>
+    <idliga>1</idliga>
     <nomeliga>Liga NOS</nomeliga>
     <imagemliga>ligas/portugalprimeira.png</imagemliga>
     <imagempais>ligas/portugal.png</imagempais>
     <pais>Portugal</pais>
 
-    <clube>
+    <clube idclube="1">
       <idclube>1</idclube>
       <nomeclube>Benfica</nomeclube>
       <nomecompleto>Sport Lisboa e Benfica</nomecompleto>
       <sigla>SLB</sigla>
       <imagemclube>primeiraLiga/benfica.svg</imagemclube>
-      <posicaoclube>1</posicaoclube>
+      <posicaoclube>3</posicaoclube>
       <pontos>17</pontos>
       <vitorias>5</vitorias>
       <empates>2</empates>
@@ -210,7 +210,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="2">
       <idclube>2</idclube>
       <nomeclube>Sporting</nomeclube>
       <nomecompleto>Sporting Clube de Portugal</nomecompleto>
@@ -412,7 +412,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="3">
       <idclube>3</idclube>
       <nomeclube>Braga</nomeclube>
       <nomecompleto>Sporting Clube de Braga</nomecompleto>
@@ -624,13 +624,13 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="4">
       <idclube>4</idclube>
       <nomeclube>Porto</nomeclube>
       <nomecompleto>Futebol Clube do Porto</nomecompleto>
       <sigla>FCP</sigla>
       <imagemclube>primeiraLiga/porto.svg</imagemclube>
-      <posicaoclube>3</posicaoclube>
+      <posicaoclube>1</posicaoclube>
       <pontos>15</pontos>
       <vitorias>5</vitorias>
       <empates>0</empates>
@@ -639,7 +639,7 @@
       <golossofridos>6</golossofridos>
       <cidade>Porto</cidade>
       <estadio>Estádio do Dragão</estadio>
-      <anofundacao>1906</anofundacao>
+      <anofundacao>1893</anofundacao>
       <presidente>Jorge Nuno Pinto da Costa</presidente>
       <treinador>Sérgio Conceição</treinador>
       <jogadores>
@@ -816,7 +816,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="5">
       <idclube>5</idclube>
       <nomeclube>Rio Ave</nomeclube>
       <nomecompleto>Rio Ave Futebol Clube</nomecompleto>
@@ -848,7 +848,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="6">
       <idclube>6</idclube>
       <nomeclube>Santa Clara</nomeclube>
       <nomecompleto>Clube Desportivo Santa Clara</nomecompleto>
@@ -880,7 +880,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="7">
       <idclube>7</idclube>
       <nomeclube>Vitória de Guimarães</nomeclube>
       <nomecompleto>Vitória Sport Clube</nomecompleto>
@@ -912,7 +912,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="8">
       <idclube>8</idclube>
       <nomeclube>Marítimo</nomeclube>
       <nomecompleto>Club Sport Marítimo</nomecompleto>
@@ -944,7 +944,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="9">
       <idclube>9</idclube>
       <nomeclube>Feirense</nomeclube>
       <nomecompleto>Clube Desportivo Feirense</nomecompleto>
@@ -976,7 +976,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="10">
       <idclube>10</idclube>
       <nomeclube>Vitória de Setúbal</nomeclube>
       <nomecompleto>Vitória Futebol Clube</nomecompleto>
@@ -1008,7 +1008,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="11">
       <idclube>11</idclube>
       <nomeclube>Boavista</nomeclube>
       <nomecompleto>Boavista Futebol Clube</nomecompleto>
@@ -1040,7 +1040,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="12">
       <idclube>12</idclube>
       <nomeclube>Belenenses</nomeclube>
       <nomecompleto>Clube de Futebol Os Belenenses</nomecompleto>
@@ -1072,7 +1072,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="13">
       <idclube>13</idclube>
       <nomeclube>Portimonense</nomeclube>
       <nomecompleto>Portimonense Sporting Clube</nomecompleto>
@@ -1104,7 +1104,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="14">
       <idclube>14</idclube>
       <nomeclube>Chaves</nomeclube>
       <nomecompleto>Grupo Desportivo de Chaves</nomecompleto>
@@ -1136,7 +1136,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="15">
       <idclube>15</idclube>
       <nomeclube>Moreirense</nomeclube>
       <nomecompleto>Moreirense Futebol Clube</nomecompleto>
@@ -1168,7 +1168,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="16">
       <idclube>16</idclube>
       <nomeclube>Tondela</nomeclube>
       <nomecompleto>Clube Desportivo de Tondela</nomecompleto>
@@ -1200,7 +1200,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="17">
       <idclube>17</idclube>
       <nomeclube>Nacional</nomeclube>
       <nomecompleto>Clube Desportivo Nacional</nomecompleto>
@@ -1232,7 +1232,7 @@
       </jogadores>
     </clube>
 
-    <clube>
+    <clube idclube="18">
       <idclube>18</idclube>
       <nomeclube>Aves</nomeclube>
       <nomecompleto>Clube Desportivo das Aves</nomecompleto>
@@ -1274,22 +1274,56 @@
     <imagempais>ligas/inglaterra.png</imagempais>
     <pais>Inglaterra</pais>
 
-    <clube>
-      <idclube></idclube>
-      <nomeclube></nomeclube>
-      <imagemclube></imagemclube>
-      <posicaoclube></posicaoclube>
-      <pontos></pontos>
-      <vitorias></vitorias>
-      <empates></empates>
-      <derrotas></derrotas>
-      <golosmarcados></golosmarcados>
-      <golossofridos></golossofridos>
-      <cidade></cidade>
-      <estadio></estadio>
-      <anofundacao></anofundacao>
-      <presidente></presidente>
-      <treinador></treinador>
+     <clube idclube="19">
+        <idclube>19</idclube>
+        <nomeclube>Man. City</nomeclube>
+        <nomecompleto>Manchester City F.C</nomecompleto>
+        <sigla>MCFC</sigla>
+        <imagemclube>premierLeague/city.png</imagemclube>
+        <posicaoclube>1</posicaoclube>
+        <pontos>23</pontos>
+        <vitorias>7</vitorias>
+        <empates>2</empates>
+        <derrotas>0</derrotas>
+        <golosmarcados>26</golosmarcados>
+        <golossofridos>3</golossofridos>
+        <cidade>Manchester</cidade>
+        <estadio>City of Manchester Stadium</estadio>
+        <anofundacao>1880</anofundacao>
+        <presidente>Khaldoon Al Mubarak</presidente>
+        <treinador>Pep Guardiola</treinador>
+        <jogadores>
+          <jogador>
+            <idjogador></idjogador>
+            <nomejogador></nomejogador>
+            <imagemjogador></imagemjogador>
+            <numerojogador></numerojogador>
+            <idade></idade>
+            <nacionalidade></nacionalidade>
+            <posicaojogador></posicaojogador>
+            <clubesanteriores></clubesanteriores>
+          </jogador>
+        </jogadores>
+      </clube>
+
+     <clube idclube="20">
+      <idclube>20</idclube>
+      <nomeclube>Liverpool</nomeclube>
+      <nomecompleto>Liverpool F.C.</nomecompleto>
+      <sigla>LFC</sigla>
+      <imagemclube>premierLeague/liverpool.png</imagemclube>
+      <posicaoclube>2</posicaoclube>
+      <pontos>23</pontos>
+      <vitorias>7</vitorias>
+      <empates>2</empates>
+      <derrotas>0</derrotas>
+      <golosmarcados>16</golosmarcados>
+      <golossofridos>3</golossofridos>
+      <cidade>Liverpool</cidade>
+      <estadio>Anfield</estadio>
+      <anofundacao>1892</anofundacao>
+      <presidente>Tom Werner</presidente>
+      <treinador>Jürgen Klopp</treinador>
       <jogadores>
         <jogador>
           <idjogador></idjogador>
@@ -1304,5 +1338,100 @@
       </jogadores>
     </clube>
 
+      <clube idclube="21">
+      <idclube>21</idclube>
+      <nomeclube>Chelsea</nomeclube>
+      <nomecompleto>Chelsea F.C.</nomecompleto>
+      <sigla>CFC</sigla>
+      <imagemclube>premierLeague/chelsea.png</imagemclube>
+      <posicaoclube>3</posicaoclube>
+      <pontos>21</pontos>
+      <vitorias>6</vitorias>
+      <empates>3</empates>
+      <derrotas>0</derrotas>
+      <golosmarcados>20</golosmarcados>
+      <golossofridos>7</golossofridos>
+      <cidade>Chelsea</cidade>
+      <estadio>Stamford Bridge</estadio>
+      <anofundacao>1905</anofundacao>
+      <presidente>Bruce Buck</presidente>
+      <treinador>Maurizio Sarri</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+       <clube idclube="22">
+      <idclube>22</idclube>
+      <nomeclube>Arsenal</nomeclube>
+      <nomecompleto>Arsenal F.C.</nomecompleto>
+      <sigla>AFC</sigla>
+      <imagemclube>premierLeague/arsenal.png</imagemclube>
+      <posicaoclube>4</posicaoclube>
+      <pontos>21</pontos>
+      <vitorias>7</vitorias>
+      <empates>0</empates>
+      <derrotas>2</derrotas>
+      <golosmarcados>22</golosmarcados>
+      <golossofridos>11</golossofridos>
+      <cidade>London</cidade>
+      <estadio>Emirates Stadium</estadio>
+      <anofundacao>1886</anofundacao>
+      <presidente>Sir Chips Keswick</presidente>
+      <treinador>Unai Emery</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
+
+       <clube idclube="23">
+      <idclube>23</idclube>
+      <nomeclube>Tottenham</nomeclube>
+      <nomecompleto>Tottenham Hotspur F.C.</nomecompleto>
+      <sigla>AFC</sigla>
+      <imagemclube>premierLeague/tottenham.png</imagemclube>
+      <posicaoclube>4</posicaoclube>
+      <pontos>21</pontos>
+      <vitorias>7</vitorias>
+      <empates>0</empates>
+      <derrotas>2</derrotas>
+      <golosmarcados>16</golosmarcados>
+      <golossofridos>7</golossofridos>
+      <cidade>Tottenham</cidade>
+      <estadio>Tottenham Hotspur Stadium</estadio>
+      <anofundacao>1882</anofundacao>
+      <presidente>Daniel Levy</presidente>
+      <treinador>Mauricio Pochettino</treinador>
+      <jogadores>
+        <jogador>
+          <idjogador></idjogador>
+          <nomejogador></nomejogador>
+          <imagemjogador></imagemjogador>
+          <numerojogador></numerojogador>
+          <idade></idade>
+          <nacionalidade></nacionalidade>
+          <posicaojogador></posicaojogador>
+          <clubesanteriores></clubesanteriores>
+        </jogador>
+      </jogadores>
+    </clube>
   </liga>
 </ligas>

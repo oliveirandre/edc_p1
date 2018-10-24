@@ -48,11 +48,12 @@ def tabelas(request):
     info9 = dict()
     x=''
     y=''
+    k=''
 
     print(request.GET['idliga'])
     if 'idliga' in request.GET:
         query = '//liga[@idliga='+request.GET['idliga']+ ']/clube'
-        query2 = '//liga[@idliga=1]'
+        query2 = '//liga[@idliga='+request.GET['idliga']+ ']'
         print(query)
         print('deu')
     else:
@@ -64,6 +65,7 @@ def tabelas(request):
     for c in curs2:
         x = c.find('nomeliga').text
         y = c.find('imagemliga').text
+        k=c.find('idliga').text
 
     for c in curs:
         info[c.find('idclube').text] = c.find('nomeclube').text
@@ -87,12 +89,85 @@ def tabelas(request):
         'golosmarcados' : info8,
         'golossofridos' : info9,
         'imagemliga' : y,
-        'nomeliga' : x
+        'nomeliga' : x,
+        'idliga' : k
     }
 
 
     return render(request, 'tabela.html', tparams)
 
+def clube(request):
+    fn = "app/liga.xml"
+    tree = ET.parse(fn)
+
+    if ('idliga' and 'idclube') in request.GET:
+        query = '//liga[@idliga='+request.GET['idliga']+ ']/clube[@idclube=' +request.GET['idclube'] + ']/jogadores/jogador'
+        query2 = '//liga[@idliga='+request.GET['idliga']+ ']/clube[@idclube=' +request.GET['idclube'] + ']'
+        print(query)
+        #print('deu')
+    else:
+        query = '//liga[@idliga=1]/clube[@clube=1]//jogadores'
+
+    info1 = dict();
+    x=''
+    y=''
+    pos=''
+    gm=''
+    gs=''
+    pont=''
+    vit = ''
+    derr=''
+    emp=''
+    cidade=''
+    fund=''
+    pres = ''
+    trei = ''
+    esta=''
+
+    curs = tree.xpath(query)
+    curs2 = tree.xpath(query2)
+    print(curs)
+
+
+    for c in curs2:
+        x = c.find('imagemclube').text
+        y=c.find('nomecompleto').text
+        pos = c.find('posicaoclube').text
+        gm = c.find('golosmarcados').text
+        gs = c.find('golossofridos').text
+        pont = c.find('pontos').text
+        vit = c.find('vitorias').text
+        derr = c.find('derrotas').text
+        emp = c.find('empates').text
+        cidade = c.find('cidade').text
+        fund = c.find('anofundacao').text
+        pres = c.find('presidente').text
+        trei = c.find('treinador').text
+        esta = c.find('estadio').text
+
+        print(x)
+
+    for c in curs:
+        info1[c.find('idjogador').text] = c.find('nomejogador').text
+
+    tparams = {
+        'jogadores' : info1,
+        'clube' : x,
+        'nomecompleto' : y,
+        'pontos' : pont,
+        'gm' : gm,
+        'gs' : gs,
+        'pos' : pos,
+        'vit' : vit,
+        'derr' : derr,
+        'emp' : emp,
+        'cidade':cidade,
+        'fundacao' : fund,
+        'presidente': pres,
+        'treinador': trei,
+        'estadio' : esta
+    }
+    return render(request, 'clube.html', tparams)
 @register.filter
 def get_item(dictionary, key):
     return dictionary.get(key)

@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block content %}
+     {% load staticfiles %}
+            <div class="row" >
+                    <!-- basic modal start -->
+                    <div class="col-lg-6 mt-5">
+                        <div class="card" style="margin-left:120px;">
+                            <div class="card-body" >
+                                <h4 class="header-title">{{ nomecompleto }}</h4>
+                                </br>
+                                <p><b>Ano de Fundação:</b>  {{ fundacao }}</p>
+                                <p><b>Cidade:</b>  {{ cidade }}</p>
+                                <p><b>Presidente:</b>  {{ presidente }}</p>
+                                <p><b>Treinador:</b>  {{ treinador }}</p>
+                                 <p><b>Estadio:</b>  {{ estadio }}</p>
+
+                                <div align="center">
+                                   <div class="col-lg-10 mt-5">
+                                        <div class="single-table">
+                                        <div class="table-responsive">
+                                         <table class="table text-center">
+                                             <thead class="text-uppercase bg-primary">
+                                                <tr class="text-white">
+                                                    <th scope="col">Pos</th>
+                                                    <th scope="col">V</th>
+                                                    <th scope="col">E</th>
+                                                    <th scope="col">D</th>
+                                                    <th scope="col">GM</th>
+                                                    <th scope="col">GS</th>
+                                                    <th scope="col">Pts</th>
+                                                </tr>
+                                            </thead>
+                                             <tbody>
+                                                <tr class="text-black">
+                                                    <th scope="col">{{ pos }}</th>
+                                                    <th scope="col">{{ vit }}</th>
+                                                    <th scope="col">{{ emp }}</th>
+                                                    <th scope="col">{{ derr }}</th>
+                                                    <th scope="col">{{ gm }}</th>
+                                                    <th scope="col">{{ gs }}</th>
+                                                    <th scope="col">{{ pontos }}</th>
+                                                </tr>
+                                             </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- basic modal end -->
+                    <!-- Scrolling Long modal start -->
+                    <div class="col-lg-6 mt-5">
+                        <div class="card-body" align="center">
+                            <image src="{% static 'img/' %}{{ clube }}" width="300px"></image>
+                        </div>
+                    </div>
+            </div>
+
+
+
+    <div class="card">
+    <div align="center">
+       <div class="col-lg-10 mt-5">
+            <div class="single-table">
+            <div class="table-responsive">
+             <table class="table text-center">
+              <h4 class="header-title">Plantel</h4>
+                <tr class="text-black">
+                    {%  for k,v in jogadores.items %}
+                        <th scope="col">
+                            <figure>
+                                <img src="{% static 'img/primeiraLiga/jogadores/ok.png' %}" width="30px" alt="my img"/>
+                                <figcaption><font size="2">{{ v }}</font></figcaption>
+                            </figure>
+                        </th>
+                    {% endfor %}
+                </tr>
+            </table>
+            </div>
+        </div>
+       </div>
+    </div>
+    </div>
+
+
+
+ {% endblock %}

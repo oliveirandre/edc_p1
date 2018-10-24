@@ -19,5 +19,6 @@ from app import views
 urlpatterns = [
         path('', views.ligas, name='liga'),
         path('tabela', views.tabelas, name='tabelas'),
-        path('index', views.ligas, name='liga')
+        path('index', views.ligas, name='liga'),
+        path('clube', views.clube, name='clube')
 ]
