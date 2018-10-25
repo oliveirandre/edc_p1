@@ -27,7 +27,7 @@
       <presidente>Luís Filipe Vieira</presidente>
       <treinador>Rui Vitória</treinador>
       <jogadores>
-        <jogador>
+        <jogador idjogador="1">
           <idjogador>1</idjogador>
           <nomejogador>Odysseas Vlachodimos</nomejogador>
           <imagemjogador></imagemjogador>
@@ -37,7 +37,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores>Stuttgart, Panathinaikos</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="2">
           <idjogador>2</idjogador>
           <nomejogador>Svilar</nomejogador>
           <imagemjogador></imagemjogador>
@@ -47,7 +47,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores>Anderlecht</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="3">
           <idjogador>3</idjogador>
           <nomejogador>André Almeida</nomejogador>
           <imagemjogador></imagemjogador>
@@ -57,7 +57,7 @@
           <posicaojogador>Lateral Direito</posicaojogador>
           <clubesanteriores>União de Leiria, Belenenses</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="4">
           <idjogador>4</idjogador>
           <nomejogador>Conti</nomejogador>
           <imagemjogador></imagemjogador>
@@ -67,7 +67,7 @@
           <posicaojogador>Defesa Central</posicaojogador>
           <clubesanteriores>Colón</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="5">
           <idjogador>5</idjogador>
           <nomejogador>Rúben Dias</nomejogador>
           <imagemjogador></imagemjogador>
@@ -77,7 +77,7 @@
           <posicaojogador>Defesa Central</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="6">
           <idjogador>6</idjogador>
           <nomejogador>Grimaldo</nomejogador>
           <imagemjogador></imagemjogador>
@@ -87,7 +87,7 @@
           <posicaojogador>Lateral Esquerdo</posicaojogador>
           <clubesanteriores>Barcelona</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="7">
           <idjogador>7</idjogador>
           <nomejogador>Jardel</nomejogador>
           <imagemjogador></imagemjogador>
@@ -97,7 +97,7 @@
           <posicaojogador>Defesa Central</posicaojogador>
           <clubesanteriores>Estoril, Olhanense</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="8">
           <idjogador>8</idjogador>
           <nomejogador>Cervi</nomejogador>
           <imagemjogador></imagemjogador>
@@ -107,7 +107,7 @@
           <posicaojogador>Extremo Esquerdo</posicaojogador>
           <clubesanteriores>Rosário Central</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="9">
           <idjogador>9</idjogador>
           <nomejogador>Fejsa</nomejogador>
           <imagemjogador></imagemjogador>
@@ -117,7 +117,7 @@
           <posicaojogador>Médio Defensivo</posicaojogador>
           <clubesanteriores>Partizan, Olympiakos</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="10">
           <idjogador>10</idjogador>
           <nomejogador>João Félix</nomejogador>
           <imagemjogador></imagemjogador>
@@ -127,7 +127,7 @@
           <posicaojogador>Médio Ofensivo</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="11">
           <idjogador>11</idjogador>
           <nomejogador>Gabriel</nomejogador>
           <imagemjogador></imagemjogador>
@@ -137,7 +137,7 @@
           <posicaojogador>Médio Central</posicaojogador>
           <clubesanteriores>Leganés</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="12">
           <idjogador>12</idjogador>
           <nomejogador>Gedson</nomejogador>
           <imagemjogador></imagemjogador>
@@ -147,7 +147,7 @@
           <posicaojogador>Médio Central</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="13">
           <idjogador>13</idjogador>
           <nomejogador>Pizzi</nomejogador>
           <imagemjogador></imagemjogador>
@@ -157,7 +157,7 @@
           <posicaojogador>Médio Central</posicaojogador>
           <clubesanteriores>Braga, Atlético de Madrid</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="14">
           <idjogador>14</idjogador>
           <nomejogador>Rafa</nomejogador>
           <imagemjogador></imagemjogador>
@@ -167,7 +167,7 @@
           <posicaojogador>Extremo Esquerdo</posicaojogador>
           <clubesanteriores>Feirense, Braga</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="15">
           <idjogador>15</idjogador>
           <nomejogador>Salvio</nomejogador>
           <imagemjogador></imagemjogador>
@@ -177,7 +177,7 @@
           <posicaojogador>Extremo Direito</posicaojogador>
           <clubesanteriores>Lanús, Atlético de Madrid</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="16">
           <idjogador>16</idjogador>
           <nomejogador>Jonas</nomejogador>
           <imagemjogador></imagemjogador>
@@ -187,7 +187,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Santos, Grêmio, Valencia</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="17">
           <idjogador>17</idjogador>
           <nomejogador>Seferovic</nomejogador>
           <imagemjogador></imagemjogador>
@@ -197,7 +197,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Real Sociedad, Eintracht Frankfurt</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="18">
           <idjogador>18</idjogador>
           <nomejogador>Ferreyra</nomejogador>
           <imagemjogador></imagemjogador>
@@ -229,7 +229,7 @@
       <presidente>Frederico Varandas</presidente>
       <treinador>José Peseiro</treinador>
       <jogadores>
-        <jogador>
+        <jogador idjogador="30">
           <idjogador>30</idjogador>
           <nomejogador>Romain Salin</nomejogador>
           <imagemjogador></imagemjogador>
@@ -239,7 +239,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores>Guingamp, Marítimo, Rio Ave</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="31">
           <idjogador>31</idjogador>
           <nomejogador>Renan Ribeiro</nomejogador>
           <imagemjogador></imagemjogador>
@@ -249,7 +249,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores>Estoril, São Paulo, Atlético Mineiro</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="32">
           <idjogador>32</idjogador>
           <nomejogador>Marcos Acuña</nomejogador>
           <imagemjogador></imagemjogador>
@@ -259,7 +259,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Racing Club</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="33">
           <idjogador>33</idjogador>
           <nomejogador>André Pinto</nomejogador>
           <imagemjogador></imagemjogador>
@@ -269,7 +269,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Braga</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="34">
           <idjogador>34</idjogador>
           <nomejogador>Sebastián Coates</nomejogador>
           <imagemjogador></imagemjogador>
@@ -279,7 +279,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Liverpool</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="35">
           <idjogador>35</idjogador>
           <nomejogador>Stefan Ristovski</nomejogador>
           <imagemjogador></imagemjogador>
@@ -289,7 +289,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Parma</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="36">
           <idjogador>36</idjogador>
           <nomejogador>Raphinha</nomejogador>
           <imagemjogador></imagemjogador>
@@ -299,7 +299,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Guimarães</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="37">
           <idjogador>37</idjogador>
           <nomejogador>Bruno Fernandes</nomejogador>
           <imagemjogador></imagemjogador>
@@ -309,7 +309,7 @@
           <posicaojogador>Médio</posicaojogador>
           <clubesanteriores>Sampadoria, Udinese</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="38">
           <idjogador>38</idjogador>
           <nomejogador>Rodrigo Battaglia</nomejogador>
           <imagemjogador></imagemjogador>
@@ -319,7 +319,7 @@
           <posicaojogador>Médio</posicaojogador>
           <clubesanteriores>Braga</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="39">
           <idjogador>39</idjogador>
           <nomejogador>Nemanja Gudelj</nomejogador>
           <imagemjogador></imagemjogador>
@@ -329,7 +329,7 @@
           <posicaojogador>Médio</posicaojogador>
           <clubesanteriores>Ajax</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="40">
           <idjogador>40</idjogador>
           <nomejogador>Fredy Montero</nomejogador>
           <imagemjogador></imagemjogador>
@@ -339,7 +339,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Deportivo Cali</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="41">
           <idjogador>41</idjogador>
           <nomejogador>Jovane Cabral</nomejogador>
           <imagemjogador></imagemjogador>
@@ -349,7 +349,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="42">
           <idjogador>42</idjogador>
           <nomejogador>Marcelo</nomejogador>
           <imagemjogador></imagemjogador>
@@ -359,7 +359,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Rio Ave</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="43">
           <idjogador>43</idjogador>
           <nomejogador>Jefferson</nomejogador>
           <imagemjogador></imagemjogador>
@@ -369,7 +369,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Estoril</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="44">
           <idjogador>44</idjogador>
           <nomejogador>Nani</nomejogador>
           <imagemjogador></imagemjogador>
@@ -379,7 +379,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Valencia, Fenerbahçe, Manchester United</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="45">
           <idjogador>45</idjogador>
           <nomejogador>Carlos Mané</nomejogador>
           <imagemjogador></imagemjogador>
@@ -389,7 +389,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="46">
           <idjogador>46</idjogador>
           <nomejogador>Abdoulay Diaby</nomejogador>
           <imagemjogador></imagemjogador>
@@ -399,7 +399,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Lille, Club Brugge</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="47">
           <idjogador>47</idjogador>
           <nomejogador>Radosav Petrovic</nomejogador>
           <imagemjogador></imagemjogador>
@@ -431,7 +431,7 @@
       <presidente>António Salvador</presidente>
       <treinador>Abel Ferreira</treinador>
       <jogadores>
-        <jogador>
+        <jogador idjogador="60">
           <idjogador>60</idjogador>
           <nomejogador>Tiago Sá</nomejogador>
           <imagemjogador></imagemjogador>
@@ -441,7 +441,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="61">
           <idjogador>61</idjogador>
           <nomejogador>Marafona</nomejogador>
           <imagemjogador></imagemjogador>
@@ -451,7 +451,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores>Paços Ferreira, Moreirense</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="62">
           <idjogador>62</idjogador>
           <nomejogador>Marcelo Goiano</nomejogador>
           <imagemjogador></imagemjogador>
@@ -461,7 +461,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Grêmio</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="63">
           <idjogador>63</idjogador>
           <nomejogador>Pablo Santos</nomejogador>
           <imagemjogador></imagemjogador>
@@ -471,7 +471,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Marítimo</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="64">
           <idjogador>64</idjogador>
           <nomejogador>Bruno Viana</nomejogador>
           <imagemjogador></imagemjogador>
@@ -481,7 +481,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Olympiacos</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="65">
           <idjogador>65</idjogador>
           <nomejogador>Nuno Sequeira</nomejogador>
           <imagemjogador></imagemjogador>
@@ -491,7 +491,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Nacional, Leixões</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="66">
           <idjogador>66</idjogador>
           <nomejogador>Ricardo Esgaio</nomejogador>
           <imagemjogador></imagemjogador>
@@ -501,7 +501,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Sporting</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="67">
           <idjogador>67</idjogador>
           <nomejogador>João Novais</nomejogador>
           <imagemjogador></imagemjogador>
@@ -511,7 +511,7 @@
           <posicaojogador>Médio</posicaojogador>
           <clubesanteriores>Rio Ave, Leixões</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="68">
           <idjogador>68</idjogador>
           <nomejogador>Claudemir</nomejogador>
           <imagemjogador></imagemjogador>
@@ -521,7 +521,7 @@
           <posicaojogador>Médio</posicaojogador>
           <clubesanteriores>Club Brugge</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="69">
           <idjogador>69</idjogador>
           <nomejogador>Ricardo Horta</nomejogador>
           <imagemjogador></imagemjogador>
@@ -531,7 +531,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Málaga</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="70">
           <idjogador>70</idjogador>
           <nomejogador>Wilson Eduardo</nomejogador>
           <imagemjogador></imagemjogador>
@@ -541,7 +541,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Sporting</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="71">
           <idjogador>71</idjogador>
           <nomejogador></nomejogador>
           <imagemjogador></imagemjogador>
@@ -551,7 +551,7 @@
           <posicaojogador></posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="72">
           <idjogador>72</idjogador>
           <nomejogador>Dyego Sousa</nomejogador>
           <imagemjogador></imagemjogador>
@@ -561,7 +561,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Marítimo</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="73">
           <idjogador>73</idjogador>
           <nomejogador>Lucas Cunha</nomejogador>
           <imagemjogador></imagemjogador>
@@ -571,7 +571,7 @@
           <posicaojogador>Defesa</posicaojogador>
           <clubesanteriores>Mirassol</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="74">
           <idjogador>74</idjogador>
           <nomejogador>Eduardo Teixeira</nomejogador>
           <imagemjogador></imagemjogador>
@@ -581,7 +581,7 @@
           <posicaojogador>Médio</posicaojogador>
           <clubesanteriores>Estoril</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="75">
           <idjogador>75</idjogador>
           <nomejogador>Paulinho</nomejogador>
           <imagemjogador></imagemjogador>
@@ -591,7 +591,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores>Gil Vicente</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="76">
           <idjogador>76</idjogador>
           <nomejogador>Fábio Martins</nomejogador>
           <imagemjogador></imagemjogador>
@@ -601,7 +601,7 @@
           <posicaojogador>Avançado</posicaojogador>
           <clubesanteriores></clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="77">
           <idjogador>77</idjogador>
           <nomejogador>Fransérgio</nomejogador>
           <imagemjogador></imagemjogador>
@@ -611,7 +611,7 @@
           <posicaojogador>Médio</posicaojogador>
           <clubesanteriores>Marítimo</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="78">
           <idjogador>78</idjogador>
           <nomejogador>João Palhinha</nomejogador>
           <imagemjogador></imagemjogador>
@@ -643,7 +643,7 @@
       <presidente>Jorge Nuno Pinto da Costa</presidente>
       <treinador>Sérgio Conceição</treinador>
       <jogadores>
-        <jogador>
+        <jogador idjogador="90">
           <idjogador>90</idjogador>
           <nomejogador>Iker Casillas</nomejogador>
           <imagemjogador></imagemjogador>
@@ -653,7 +653,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores>Real Madrid</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="91">
           <idjogador>91</idjogador>
           <nomejogador>Vaná Alves</nomejogador>
           <imagemjogador></imagemjogador>
@@ -663,7 +663,7 @@
           <posicaojogador>Guarda-Redes</posicaojogador>
           <clubesanteriores>Feirense, Coritiba FC</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="92">
           <idjogador>92</idjogador>
           <nomejogador>Felipe</nomejogador>
           <imagemjogador></imagemjogador>
@@ -673,7 +673,7 @@
           <posicaojogador>Defesa Central</posicaojogador>
           <clubesanteriores>Corinthians</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="93">
           <idjogador>93</idjogador>
           <nomejogador>Éder Militão</nomejogador>
           <imagemjogador></imagemjogador>
@@ -683,7 +683,7 @@
           <posicaojogador>Defesa Central</posicaojogador>
           <clubesanteriores>São Paulo</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="94">
           <idjogador>94</idjogador>
           <nomejogador>Diogo Leite</nomejogador>
           <imagemjogador></imagemjogador>
@@ -693,7 +693,7 @@
           <posicaojogador>Defesa Central</posicaojogador>
           <clubesanteriores>Porto B</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="95">
           <idjogador>95</idjogador>
           <nomejogador>Alex Telles</nomejogador>
           <imagemjogador></imagemjogador>
@@ -703,7 +703,7 @@
           <posicaojogador>Lateral Esquerdo</posicaojogador>
           <clubesanteriores>Galatasaray, Inter, Grêmio</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="96">
           <idjogador>96</idjogador>
           <nomejogador>Maxi Pereira</nomejogador>
           <imagemjogador></imagemjogador>
@@ -713,7 +713,7 @@
           <posicaojogador>Lateral Direito</posicaojogador>
           <clubesanteriores>Benfica, Defensor</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="97">
           <idjogador>97</idjogador>
           <nomejogador>Danilo Pereira</nomejogador>
           <imagemjogador></imagemjogador>
@@ -723,7 +723,7 @@
           <posicaojogador>Médio Defensivo</posicaojogador>
           <clubesanteriores>Marítimo, Parma, Roda JC, Aris Saloniki</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="98">
           <idjogador>98</idjogador>
           <nomejogador>Héctor Herrera</nomejogador>
           <imagemjogador></imagemjogador>
@@ -733,7 +733,7 @@
           <posicaojogador>Médio Central</posicaojogador>
           <clubesanteriores>CF Pachuca</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="99">
           <idjogador>99</idjogador>
           <nomejogador>Sérgio Oliveira</nomejogador>
           <imagemjogador></imagemjogador>
@@ -743,7 +743,7 @@
           <posicaojogador>Médio Central</posicaojogador>
           <clubesanteriores>FC Nantes, Paços Ferreira, Penafiel</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="100">
           <idjogador>100</idjogador>
           <nomejogador>Óliver Torres</nomejogador>
           <imagemjogador></imagemjogador>
@@ -753,7 +753,7 @@
           <posicaojogador>Médio Ofensivo</posicaojogador>
           <clubesanteriores>Atlético Madrid, FC Villarreal</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="101">
           <idjogador>101</idjogador>
           <nomejogador>Otávio</nomejogador>
           <imagemjogador></imagemjogador>
@@ -763,7 +763,7 @@
           <posicaojogador>Médio Ofensivo</posicaojogador>
           <clubesanteriores>Vitória SC, Internacional</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="102">
           <idjogador>102</idjogador>
           <nomejogador>Yacine Brahimi</nomejogador>
           <imagemjogador></imagemjogador>
@@ -773,7 +773,7 @@
           <posicaojogador>Extremo Esquerdo</posicaojogador>
           <clubesanteriores>Granada CF, Rennes</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="103">
           <idjogador>103</idjogador>
           <nomejogador>Jesús Corona</nomejogador>
           <imagemjogador></imagemjogador>
@@ -783,7 +783,7 @@
           <posicaojogador>Extremo Direito</posicaojogador>
           <clubesanteriores>FC Twente, Monterrey</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="104">
           <idjogador>104</idjogador>
           <nomejogador>Moussa Marega</nomejogador>
           <imagemjogador></imagemjogador>
@@ -793,7 +793,7 @@
           <posicaojogador>Segundo Avançado</posicaojogador>
           <clubesanteriores>Vitória SC, Marítimo, Esperance, SC Amiens</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="105">
           <idjogador>105</idjogador>
           <nomejogador>Vincent Aboubakar</nomejogador>
           <imagemjogador></imagemjogador>
@@ -803,7 +803,7 @@
           <posicaojogador>Ponta de Lança</posicaojogador>
           <clubesanteriores>Besiktas, FC Lorient</clubesanteriores>
         </jogador>
-        <jogador>
+        <jogador idjogador="106">
           <idjogador>106</idjogador>
           <nomejogador>Tiquinho Soares</nomejogador>
           <imagemjogador></imagemjogador>

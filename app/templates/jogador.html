@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+     {% load staticfiles %}
+            <div class="row" >
+                    <!-- basic modal start -->
+                    <div class="col-lg-6 mt-5">
+                        <div class="card" style="margin-left:160px;">
+                            <div class="card-body" >
+                                <h4 class="header-title">{{ nome }} {{ numero }}</h4>
+                                </br>
+                                <h6>Posição: {{ posicao }}</h6>
+                                <p>Idade: {{ idade }}</p>
+                                <p>Nacionalidade: {{ nacional }}</p>
+                                <p>Clubes anteriores: {{ anteriores }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- basic modal end -->
+                    <!-- Scrolling Long modal start -->
+                    <div class="col-lg-6 mt-3">
+                        <div class="card-body" align="center" style="margin-right:160px;">
+                            <image src="{% static 'img/primeiraLiga/jogadores/ok.png' %}" width="300px"></image>
+                        </div>
+                    </div>
+            </div>
+
+ {% endblock %}

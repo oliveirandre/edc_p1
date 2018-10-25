@@ -4,36 +4,49 @@ from django.template.defaulttags import register
 
 info = []
 def ligas(request):
-    fm = "app/liga.xml"
-    tree = ET.parse(fm)
-    info = dict()
-    info2 = dict()
-    info3 = dict()
-    info4 = dict()
+    nomes = dict()
+    paises = dict()
+    imagensliga = dict()
+    imagenspaises = dict()
+    res = None
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    try:
+        input = """
+                <ligas> {
+                    for $c in doc('Ligas')/ligas/liga
+                    return
+                      <liga>
+                        <idliga>{$c/idliga/text()}</idliga>
+                        <imagemliga>{$c/imagemliga/text()}</imagemliga>
+                        <imagempais>{$c/imagempais/text()}</imagempais>
+                        <pais>{$c/pais/text()}</pais>
+                        <nomeliga>{$c/nomeliga/text()}</nomeliga>
+                      </liga>
+                    } </ligas>
+                """
+        query = session.query(input)
+        res = query.execute()
+        query.close()
+    finally:
+        if session:
+            session.close()
 
-    query = '//liga'
-
-    print("ola")
-    curs = tree.xpath(query)
-    for c in curs:
-        info4[c.find('idliga').text] = c.find('pais').text
-        info[c.find('idliga').text] = c.find('nomeliga').text
-        print(c.find('nomeliga').text)
-        info2[c.find('idliga').text] = c.find('imagemliga').text
-        print(c.find('imagemliga').text)
-        info3[c.find('idliga').text] = c.find('imagempais').text
-        print(c.find('imagempais').text)
-
-
-
+    dres = xmltodict.parse(res)
+    lres = dres['ligas']['liga']
+    for l in lres:
+        nomes[l['idliga']] = l['nomeliga']
+        imagensliga[l['idliga']] = l['imagemliga']
+        paises[l['idliga']] = l['pais']
+        imagenspaises[l['idliga']] = l['imagempais']
+        
     tparams = {
-        'nomes': info,
-        'liga' : info2,
-        'pais' : info3,
-        'paisn' :info4,
+        'nomes': nomes,
+        'paisn': paises,
+        'pais': imagenspaises,
+        'liga': imagensliga,
     }
-    return render(request, 'index.html', tparams)
 
+    return render(request, 'index.html', tparams)
 def tabelas(request):
     fn = "app/liga.xml"
     tree = ET.parse(fn)
@@ -123,6 +136,8 @@ def clube(request):
     pres = ''
     trei = ''
     esta=''
+    idliga= request.GET['idliga']
+    idclube = request.GET['idclube']
 
     curs = tree.xpath(query)
     curs2 = tree.xpath(query2)
@@ -165,9 +180,54 @@ def clube(request):
         'fundacao' : fund,
         'presidente': pres,
         'treinador': trei,
-        'estadio' : esta
+        'estadio' : esta,
+        'idliga' : idliga,
+        'idclube' : idclube
     }
     return render(request, 'clube.html', tparams)
+
+
+def jogador(request):
+    fn = "app/liga.xml"
+    tree = ET.parse(fn)
+
+    if ('idliga' and 'idclube' and 'idjogador') in request.GET:
+        query = '//liga[@idliga=' + request.GET['idliga'] + ']/clube[@idclube=' + request.GET[
+            'idclube'] + ']/jogadores/jogador[@idjogador=' + request.GET['idjogador'] + ']'
+    else:
+        query = '//liga[@idliga=1]/clube[@clube=1]//jogadores'
+
+    curs = tree.xpath(query)
+    a=''
+    b=''
+    c=''
+    d=''
+    e=''
+    f=''
+    g=''
+    for c in curs:
+        print(c.find('idade').text)
+        d = c.find('idade').text
+        g = c.find('clubesanteriores').text
+        e = c.find('nacionalidade').text
+        f = c.find('posicaojogador').text
+        a = c.find('nomejogador').text
+        b = c.find('numerojogador').text
+        c = c.find('nacionalidade').text
+
+    tparams = {
+        'nome' : a,
+        'numero' : b,
+        'nacional' : c,
+        'posicao' : f,
+        'nacionalidade': e,
+        'idade' : d,
+        'anteriores' : g
+
+    }
+
+
+    return render(request, 'jogador.html', tparams)
 @register.filter
 def get_item(dictionary, key):
     return dictionary.get(key)
