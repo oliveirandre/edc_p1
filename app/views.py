@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from lxml import etree as ET
 from django.template.defaulttags import register
+from BaseXClient import BaseXClient
+import xmltodict
 
-info = []
 def ligas(request):
     nomes = dict()
     paises = dict()
@@ -47,66 +48,126 @@ def ligas(request):
     }
 
     return render(request, 'index.html', tparams)
+
+
 def tabelas(request):
+    nomeclube = dict()
+    vitorias = dict()
+    empates = dict()
+    derrotas = dict()
+    posicaoclube = dict()
+    imagemclube = dict()
+    pontos = dict()
+    golosmarcados = dict()
+    golossofridos = dict()
+    nomeliga = ''
+    idliga = ''
+    imagemliga = ''
+
     fn = "app/liga.xml"
     tree = ET.parse(fn)
-    info = dict()
-    info2 = dict()
-    info3 = dict()
-    info4 = dict()
-    info5 = dict()
-    info6= dict()
-    info7 = dict()
-    info8 = dict()
-    info9 = dict()
-    x=''
-    y=''
-    k=''
-
-    print(request.GET['idliga'])
     if 'idliga' in request.GET:
-        query = '//liga[@idliga='+request.GET['idliga']+ ']/clube'
-        query2 = '//liga[@idliga='+request.GET['idliga']+ ']'
-        print(query)
-        print('deu')
+        query = '//liga[@idliga=' + request.GET['idliga'] + ']'
+    liga = tree.xpath(query)
+    for c in liga:
+        nomeliga = c.find('nomeliga').text
+        imagemliga = c.find('imagemliga').text
+        idliga = c.find('idliga').text
+
+    res = None
+    if request.GET['idliga'] == "1":
+        session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+        try:
+            input = """
+                    <liga> {
+                      let $idliga := "1"
+                      for $c in doc('Ligas')/ligas/liga
+                      where $c/idliga/text() = $idliga
+                      return
+                      for $a in $c//clube
+                        return
+                        <clube>
+                          <idclube>{$a/idclube/text()}</idclube>
+                          <nomeclube>{$a/nomeclube/text()}</nomeclube>
+                          <vitorias>{$a/vitorias/text()}</vitorias>
+                          <empates>{$a/empates/text()}</empates>
+                          <derrotas>{$a/derrotas/text()}</derrotas>
+                          <posicaoclube>{$a/posicaoclube/text()}</posicaoclube>
+                          <imagemclube>{$a/imagemclube/text()}</imagemclube>
+                          <pontos>{$a/pontos/text()}</pontos>
+                          <golosmarcados>{$a/golosmarcados/text()}</golosmarcados>
+                          <golossofridos>{$a/golossofridos/text()}</golossofridos>
+                        </clube>
+                    } </liga>
+                    """
+            query = session.query(input)
+            res = query.execute()
+            query.close()
+        finally:
+            if session:
+                session.close()
+        dres = xmltodict.parse(res)
+        lres = dres['liga']['clube']
+
     else:
-        query = '//liga[@idliga=1]/clube'
+        session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+        try:
+            input = """
+                    <liga> {
+                      let $idliga := "2"
+                      for $c in doc('Ligas')/ligas/liga
+                      where $c/idliga/text() = $idliga
+                      return
+                      for $a in $c//clube
+                        return
+                        <clube>
+                          <idclube>{$a/idclube/text()}</idclube>
+                          <nomeclube>{$a/nomeclube/text()}</nomeclube>
+                          <vitorias>{$a/vitorias/text()}</vitorias>
+                          <empates>{$a/empates/text()}</empates>
+                          <derrotas>{$a/derrotas/text()}</derrotas>
+                          <posicaoclube>{$a/posicaoclube/text()}</posicaoclube>
+                          <imagemclube>{$a/imagemclube/text()}</imagemclube>
+                          <pontos>{$a/pontos/text()}</pontos>
+                          <golosmarcados>{$a/golosmarcados/text()}</golosmarcados>
+                          <golossofridos>{$a/golossofridos/text()}</golossofridos>
+                        </clube>
+                    } </liga>
+                    """
+            query = session.query(input)
+            res = query.execute()
+            query.close()
+        finally:
+            if session:
+                session.close()
+        dres = xmltodict.parse(res)
+        lres = dres['liga']['clube']
 
-    curs = tree.xpath(query)
-    curs2 = tree.xpath(query2)
-
-    for c in curs2:
-        x = c.find('nomeliga').text
-        y = c.find('imagemliga').text
-        k=c.find('idliga').text
-
-    for c in curs:
-        info[c.find('idclube').text] = c.find('nomeclube').text
-        info2[c.find('idclube').text] = c.find('vitorias').text
-        info3[c.find('idclube').text] = c.find('empates').text
-        info4[c.find('idclube').text] = c.find('derrotas').text
-        info5[c.find('idclube').text] = int(c.find('posicaoclube').text)
-        info6[c.find('idclube').text] = c.find('imagemclube').text
-        info7[c.find('idclube').text] = c.find('pontos').text
-        info8[c.find('idclube').text] = c.find('golosmarcados').text
-        info9[c.find('idclube').text] = c.find('golossofridos').text
+    for l in lres:
+        nomeclube[l['idclube']] = l['nomeclube']
+        vitorias[l['idclube']] = l['vitorias']
+        empates[l['idclube']] = l['empates']
+        derrotas[l['idclube']] = l['derrotas']
+        golosmarcados[l['idclube']] = l['golosmarcados']
+        golossofridos[l['idclube']] = l['golossofridos']
+        posicaoclube[l['idclube']] = l['posicaoclube']
+        imagemclube[l['idclube']] = l['imagemclube']
+        pontos[l['idclube']] = l['pontos']
 
     tparams = {
-        'nomeclube': info,
-        'vitorias' : info2,
-        'empates' : info3,
-        'derrotas' : info4,
-        'posicaoclube' : sorted(info5.items(), key=lambda x: x[1]),
-        'imagem' : info6,
-        'pontos' : info7,
-        'golosmarcados' : info8,
-        'golossofridos' : info9,
-        'imagemliga' : y,
-        'nomeliga' : x,
-        'idliga' : k
+        'nomeclube': nomeclube,
+        'vitorias': vitorias,
+        'empates': empates,
+        'derrotas': derrotas,
+        'posicaoclube': sorted(posicaoclube.items(), key=lambda x: x[1]),
+        'imagem': imagemclube,
+        'pontos': pontos,
+        'golosmarcados': golosmarcados,
+        'golossofridos': golossofridos,
+        'imagemliga': imagemliga,
+        'nomeliga': nomeliga,
+        'idliga': idliga
     }
-
-
     return render(request, 'tabela.html', tparams)
 
 def clube(request):
