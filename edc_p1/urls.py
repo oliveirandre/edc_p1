@@ -21,5 +21,7 @@ urlpatterns = [
         path('tabela', views.tabelas, name='tabelas'),
         path('index', views.ligas, name='liga'),
         path('clube', views.clube, name='clube'),
-        path('jogador', views.jogador, name='jogador')
+        path('jogador', views.jogador, name='jogador'),
+        path('register', views.registers, name='register'),
+        path('login', views.logins, name='login')
 ]

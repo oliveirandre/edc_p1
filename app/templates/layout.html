@@ -61,6 +61,32 @@
                         </div>
                     </div>
                     <!-- profile info & task notification -->
+                    {% if login %}
+                      <div class="col-md-9 clearfix text-right">
+                            <div class="clearfix d-md-inline-block d-block">
+                            <div class="user-profile m-0">
+                                <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Kumkum Rai <i class="fa fa-angle-down"></i></h4>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                     {% else %}
+                          <div class="col-md-9 clearfix text-right">
+                            <div class="clearfix d-md-inline-block d-block">
+                            <div class="user-profile m-0">
+                                <h4 class="user-name dropdown-toggle" data-toggle="dropdown">LogIn/Register <i class="fa fa-angle-down"></i></h4>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="register#reg">Register</a>
+                                    <a class="dropdown-item" href="login#log">LogIn</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

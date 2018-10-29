@@ -465,7 +465,7 @@
     right: 21px;
     top: 14px;
     font-size: 14px;
-    color: #b1a7a7;
+    color: black;
 }
 
 
@@ -713,7 +713,7 @@ ul.breadcrumbs {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
-    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);
+    background: linear-gradient(to right, #337ddd 0%, #30f 100%);
     padding: 17px 38px;
     position: relative;
 }
@@ -785,7 +785,7 @@ ul.breadcrumbs {
 
 .user-profile .dropdown-menu a {
     font-size: 14px;
-    color: #8a8a8a;
+    color: black;
     letter-spacing: 0;
     font-weight: 500;
     padding: 4px 120px;
@@ -2344,7 +2344,7 @@ table.dataTable thead td {
     position: absolute;
     left: 0;
     top: 0;
-    color: #b3b2b2;
+    color: black;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -2381,7 +2381,7 @@ table.dataTable thead td {
     position: absolute;
     right: 5px;
     bottom: 15px;
-    color: #7e74ff;
+    color: black;
     font-size: 16px;
 }
 
@@ -2398,7 +2398,7 @@ table.dataTable thead td {
     height: 50px;
     border: none;
     background: #fff;
-    color: #585b5f;
+    color: black;
     border-radius: 40px;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -2410,7 +2410,7 @@ table.dataTable thead td {
 }
 
 .submit-btn-area button:hover {
-    background: #2c71da;
+    background: grey;
     color: #ffffff;
 }
 

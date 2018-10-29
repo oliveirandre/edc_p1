@@ -12,41 +12,20 @@
                                 <ul id="nav_menu">
 
                                     {%  for k,v in paisn.items %}
-                                         {%  for x,y in pais.items %}
-                                              {%  for x1,y1 in nomes.items %}
-                                                   {%  for x2,y2 in liga.items %}
-                                                     {% if k == x %}
-                                                         {% if k == x1 %}
-                                                             {% if k == x2 %}
-                                                                    <li>
-                                                                        {% load staticfiles %}
-
-                                                                        <a href="javascript:void(0)"><span><image src="{% static 'img/' %}{{ y|lower }}" width="20" heigth="10"> {{ v }}</span></a>
-                                                                        <ul class="submenu">
-                                                                            <li><a href='tabela?idliga={{ k }}'><image src="{% static 'img/' %}{{ y2|lower }}" width="30" heigth="15"> {{ y1 }}</a></li>
-                                                                        </ul>
-                                                                    </li>
-                                                             {% endif %}
-                                                         {% endif %}
-                                                     {% endif %}
-                                                   {% endfor %}
-                                              {% endfor %}
-                                         {% endfor %}
+                                        {% with y=pais|get_item:k y1=nomes|get_item:k y2=liga|get_item:k %}
+                                            <li>
+                                                {% load staticfiles %}
+                                                <a href="javascript:void(0)"><span><image src="{% static 'img/' %}{{ y|lower }}" width="20" heigth="10"> {{ v }}</span></a>
+                                                <ul class="submenu">
+                                                    <li><a href='tabela?idliga={{ k }}'><image src="{% static 'img/' %}{{ y2|lower }}" width="30" heigth="15"> {{ y1 }}</a></li>
+                                                </ul>
+                                            </li>
+                                        {% endwith %}
                                     {% endfor %}
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                    <!-- nav and search button -->
-                    <div class="col-lg-3 clearfix">
-                        <div class="search-box">
-                            <form action="#">
-                                <input type="text" name="search" placeholder="Search..." required>
-                                <i class="ti-search"></i>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- mobile_menu -->
                     <div class="col-12 d-block d-lg-none">
                         <div id="mobile_menu"></div>
                     </div>
@@ -57,25 +36,14 @@
         <!-- page title area end -->
 
         {%  for k,v in paisn.items %}
-            {%  for x,y in pais.items %}
-                {%  for x1,y1 in nomes.items %}
-                    {%  for x2,y2 in liga.items %}
-                        {% if k == x %}
-                            {% if k == x1 %}
-                                {% if k == x2 %}
-                                    {% load staticfiles %}
-
-                                    <div class="col-lg-12 mt-5" align="center">
-                                        <h4><image src="{% static 'img/' %}{{ y|lower }}" width="50px" heigth="25px"> {{ v }}</h4>
-                                        </br>
-                                        <button onclick="location.href='tabela?idliga={{ k }}';" type="button" class="btn btn-rounded btn-light"><image src="{% static 'img/' %}{{ y2|lower }}" width="40" heigth="20">  {{ y1 }}</button>
-                                    </div>
-                                {% endif %}
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-                {% endfor %}
-            {% endfor %}
+            {% with y=pais|get_item:k y1=nomes|get_item:k y2=liga|get_item:k %}
+                {% load staticfiles %}
+                <div class="col-lg-12 mt-5" align="center">
+                    <h4><image src="{% static 'img/' %}{{ y|lower }}" width="50px" heigth="25px"> {{ v }}</h4>
+                    </br>
+                    <button onclick="location.href='tabela?idliga={{ k }}';" type="button" class="btn btn-rounded btn-light"><image src="{% static 'img/' %}{{ y2|lower }}" width="40" heigth="20">  {{ y1 }}</button>
+                </div>
+            {% endwith %}
         {% endfor %}
     
   {% endblock %}
