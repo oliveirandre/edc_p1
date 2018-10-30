@@ -82,7 +82,7 @@ def tabelas(request):
             input = """
                     <liga> {
                       let $idliga := """ + request.GET['idliga'] + """
-                     for $c in doc('Ligas')/ligas/liga
+                      for $c in doc('Ligas')/ligas/liga
                       where $c/idliga/text() = $idliga
                       return
                       for $a in $c//clube
@@ -216,46 +216,49 @@ def clube(request):
 
 
 def jogador(request):
-    fn = "app/liga.xml"
-    tree = ET.parse(fn)
-
-    if ('idliga' and 'idclube' and 'idjogador') in request.GET:
-        query = '//liga[@idliga=' + request.GET['idliga'] + ']/clube[@idclube=' + request.GET[
-            'idclube'] + ']/jogadores/jogador[@idjogador=' + request.GET['idjogador'] + ']'
-    else:
-        query = '//liga[@idliga=1]/clube[@clube=1]//jogadores'
-
-    curs = tree.xpath(query)
-    a=''
-    b=''
-    c=''
-    d=''
-    e=''
-    f=''
-    g=''
-    for c in curs:
-        print(c.find('idade').text)
-        d = c.find('idade').text
-        g = c.find('clubesanteriores').text
-        e = c.find('nacionalidade').text
-        f = c.find('posicaojogador').text
-        a = c.find('nomejogador').text
-        b = c.find('numerojogador').text
-        c = c.find('nacionalidade').text
+    if 'idjogador' in request.GET:
+        session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+        try:
+            input = """
+                    <jogadores> {
+                        let $idjogador := """ + request.GET['idjogador'] + """
+                        for $c in doc('Ligas')/ligas/liga/clube/jogadores
+                        return
+                        for $a in $c//jogador
+                          where $a/idjogador/text() = $idjogador
+                          return
+                          <jogador>
+                            <idjogador>{$a/idjogador/text()}</idjogador>
+                            <nomejogador>{$a/nomejogador/text()}</nomejogador>
+                            <imagemjogador>{$a/imagemjogador/text()}</imagemjogador>
+                            <numerojogador>{$a/numerojogador/text()}</numerojogador>
+                            <idade>{$a/idade/text()}</idade>
+                            <nacionalidade>{$a/nacionalidade/text()}</nacionalidade>
+                            <posicaojogador>{$a/posicaojogador/text()}</posicaojogador>
+                            <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores>
+                          </jogador>
+                    } </jogadores>
+                    """
+            query = session.query(input)
+            res = query.execute()
+            query.close()
+        finally:
+            if session:
+                session.close()
+        dres = xmltodict.parse(res)
+        lres = dres['jogadores']['jogador']
 
     tparams = {
-        'nome' : a,
-        'numero' : b,
-        'nacional' : c,
-        'posicao' : f,
-        'nacionalidade': e,
-        'idade' : d,
-        'anteriores' : g
-
+        'nome': lres['nomejogador'],
+        'numero': lres['numerojogador'],
+        'nacional': lres['nacionalidade'],
+        'posicao': lres['posicaojogador'],
+        'nacionalidade': lres['nacionalidade'],
+        'idade': lres['idade'],
+        'anteriores': lres['clubesanteriores'],
     }
-
-
     return render(request, 'jogador.html', tparams)
+
 login = False
 def registers(request):
     return render(request, 'register.html', {})
