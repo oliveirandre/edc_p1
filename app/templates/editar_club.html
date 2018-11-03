@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="row">
+    <div class="col-6 mt-5">
+        <div class="card" style="margin-left:120px;">
+            <div class="card-body" >
+                <h4 class="header-title">Editar Clube</h4>
+
+                <form class="form-horizontal" method="POST" action="/edits_club?idclube={{ idclube }}" >
+                    {% csrf_token %}
+                    <div class="form-group row" >
+                        <div class="col-sm-6 ">
+                            <h6>Nome do Clube</h6>
+                            <input type="text" class="form-control" value="{{ nomecompleto }}" name="nomeclube" id="nomeclube">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Ano de fundação</h6>
+                            <input type="text" class="form-control" value="{{ fundacao }}" placeholder="Ano de Fundação" name="anofund" id="anofund">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Cidade</h6>
+                            <input type="text" class="form-control" value="{{ cidade }}" name="cidade" id="cidade">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Presidente</h6>
+                            <input type="text" class="form-control" value="{{ presidente }}" name="presidente" id="presidente">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Estádio</h6>
+                            <input type="text" class="form-control" value="{{ estadio }}" name="estadio" id="estadio">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Posição</h6>
+                            <input type="text" class="form-control" value="{{ pos }}" name="posicaoclube" id="posicaoclube">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                              <h6>Pontos</h6>
+                            <input type="text" class="form-control" value="{{ pontos }}" name="pontos" id="pontos">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Vitórias</h6>
+                            <input type="text" class="form-control" value="{{ vit }}" name="vitorias" id="vitorias">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Derrotas</h6>
+                            <input type="text" class="form-control" value="{{ derr }}" name="derrotas" id="derrotas">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Empates</h6>
+                            <input type="text" class="form-control" value="{{ emp }}" name="empates" id="empates">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Golos Marcados</h6>
+                            <input type="text" class="form-control" value="{{ gm }}" name="golosmarcados" id="golosmarcados">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Golos Sofridos</h6>
+                            <input type="text" class="form-control" value="{{ gs }}" name="golossofridos" id="golossofridos">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <h6>Treinador</h6>
+                            <input type="text" class="form-control" value="{{ treinador }}" name="treinador" id="treinador">
+                        </div>
+                    </div>
+                     <div class="col-lg-12 mt-5" align="left">
+                         <button type="submit" class="btn btn-rounded"> <h6>Submeter</h6> </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+        {% load staticfiles %}
+        <div class="col-lg-6 mt-5">
+            <div class="card-body" align="center">
+                <image src="{% static 'img/' %}{{ clube }}" width="300px"></image>
+            </div>
+        </div>
+    </div>
+
+  {% endblock %}

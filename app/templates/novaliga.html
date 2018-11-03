@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="col-6 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="header-title">Nova Liga</h4>
+
+                <form class="form-horizontal" method="POST" action="addLigaXML">
+                    {% csrf_token %}
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Nome da Liga" name="nomeliga" id="nomeliga">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="País da Liga" name="nomepais" id="nomepais">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-5" align="left">
+                         <button type="submit" class="btn btn-rounded"> <h6>Submeter</h6> </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+  {% endblock %}

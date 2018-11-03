@@ -71,10 +71,15 @@
                     {%  for k,v in jogadores.items %}
                         <th scope="col">
                             <figure>
-                                <a href="jogador?idliga={{ idliga }}&idclube={{ idclube }}&idjogador={{ k }}"><img src="{% static 'img/primeiraLiga/jogadores/ok.png' %}" width="30px" alt="my img"/></a>
+                                <a href="jogador?idjogador={{ k }}"><img src="{% static 'img/primeiraLiga/jogadores/ok.png' %}" width="30px" alt="my img"/></a>
                                 <figcaption><font size="2">{{ v }}</font></figcaption>
+                                <img src="{% static 'img/icons/def.png' %}" width="20px" alt="my img"/>
+                                <img src="{% static 'img/icons/rem.png' %}" width="20px" alt="my img"/>
+
                             </figure>
+
                         </th>
+
                     {% endfor %}
                 </tr>
             </table>

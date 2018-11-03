@@ -28,6 +28,7 @@
                             <th scope="col">GM</th>
                             <th scope="col">GS</th>
                             <th scope="col">Pts</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,8 +37,8 @@
                                     <tr>
                                     <th scope="col">{{ v }}</th>
                                     {% load staticfiles %}
-                                    <td><a href="clube?idliga={{ idliga }}&idclube={{ k }}"><image src="{% static 'img/' %}{{ y4 }}" width="30px"></a></td>
-                                    <td><a href="clube?idliga={{ idliga }}&idclube={{ k }}">&nbsp;&nbsp;&nbsp;{{ y3 }}</a></th>
+                                    <td><a href="clube?idclube={{ k }}"><image src="{% static 'img/' %}{{ y4 }}" width="30px"></a></td>
+                                    <td><a href="clube?idclube={{ k }}">&nbsp;&nbsp;&nbsp;{{ y3 }}</a></th>
                                     <td>8</td>
                                     <td>{{ y }}</td>
                                     <td>{{ y1 }}</td>
@@ -45,13 +46,14 @@
                                     <td>{{ y6 }}</td>
                                     <td>{{ y7 }}</td>
                                     <td>{{ y5 }}</td>
+                                        <td><a href="editar_club?idclube={{ k }}"class="btn btn-md btn-info" type="button"><font color="white">Editar</font></a> </td>
                                      </tr>
                                 {% endwith %}
                             {% endfor %}
-
-
                     </tbody>
                 </table>
+            <a href="editar_club?idclube={{ k }}"class="btn btn-md btn-info" type="button"><font color="white">Adicionar Equipa</font></a>
+
             </div>
         </div>
         </div>

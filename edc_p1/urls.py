@@ -22,6 +22,8 @@ urlpatterns = [
         path('index', views.ligas, name='liga'),
         path('clube', views.clube, name='clube'),
         path('jogador', views.jogador, name='jogador'),
-        path('register', views.registers, name='register'),
-        path('login', views.logins, name='login')
+        path('addLiga', views.addLiga, name='addLiga'),
+        path('addLigaXML', views.addLigaXML, name='addLigaXML'),
+        path('editar_club', views.edit_club, name='edit_club'),
+        path('edits_club', views.edits_clube, name='edits_club'),
 ]
