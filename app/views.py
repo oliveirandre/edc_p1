@@ -68,7 +68,7 @@ def tabelas(request):
     fn = "app/liga.xml"
     tree = ET.parse(fn)
     if 'idliga' in request.GET:
-        query = '//liga[@idliga=' + request.GET['idliga'] + ']'
+        query = '//liga[@idliga=' + str(request.GET['idliga']) + ']'
     liga = tree.xpath(query)
     for c in liga:
         nomeliga = c.find('nomeliga').text
@@ -81,7 +81,7 @@ def tabelas(request):
         try:
             input = """
                     <liga> {
-                      let $idliga := """ + request.GET['idliga'] + """
+                      let $idliga := """ + str(request.GET['idliga']) + """
                       for $c in doc('Ligas')/ligas/liga
                       where $c/idliga/text() = $idliga
                       return
@@ -141,7 +141,7 @@ def tabelas(request):
 def clube(request):
     info1 = dict();
     if ('idclube') in request.GET:
-      id=request.GET['idclube']
+      id=str(request.GET['idclube'])
     else:
         id=1
 
@@ -238,7 +238,7 @@ def jogador(request):
         try:
             input = """
                     <jogadores> {
-                        let $idjogador := """ + request.GET['idjogador'] + """
+                        let $idjogador := """ + str(request.GET['idjogador']) + """
                         for $c in doc('Ligas')/ligas/liga/clube/jogadores
                         return
                         for $a in $c//jogador
@@ -307,14 +307,14 @@ def addLigaXML(request):
 
 def edit_club(request):
     if ('idclube') in request.GET:
-      id=request.GET['idclube']
+        id = str(request.GET['idclube'])
     else:
         id=1
 
     session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
     try:
         input = """<clube> {
-                      let $id := """+ id + """
+                      let $id := """ + id + """
                       for $c in doc('Ligas')/ligas/liga/clube
                       where $c/idclube/text()=$id
                       return
@@ -367,34 +367,35 @@ def edit_club(request):
     }
     return render(request, 'editar_club.html', tparams)
 
+
 def edits_clube(request):
     session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
     print(str(request.POST.get('treinador')))
     try:
-        input = """<clube>{
-                    let $pontos := """ + request.POST.get('pontos') + """
-                    let $posicao := """ + request.POST.get('posicao') + """  
-                    let $vitorias := """ + request.POST.get('pontos') + """
-                    let $empates := """ + request.POST.get('empates') + """
-                    let $treinador := """ + request.POST.get('treinador') + """
-                    let $id := """ + request.GET['idclube'] + """
-                    for $c in doc('Ligas')/ligas/liga/clube
-                    where $c/idclube/text()=$id
-                    return (replace value of node $c/pontos with $pontos,
-                          replace value of node $c/posicaoclube with $posicao,
-                          replace value of node $c/vitorias with $vitorias,
-                         replace value of node $c/empates with $empates,
-                         replace value of node $c/treinador with $treinador) 
-                    }</clube> """
+        input = """               
+                let $id := """ + "'" + str(request.GET['idclube']) + "'" + """
+                let $pontos := """ + "'" + str(request.POST.get('pontos')) + "'" + """
+                let $posicao := """ + "'" + str(request.POST.get('posicaoclube')) + "'" + """  
+                let $vitorias := """ + "'" + str(request.POST.get('vitorias')) + "'" + """
+                let $empates := """ + "'" + str(request.POST.get('empates')) + "'" + """
+                let $treinador := """ + "'" + str(request.POST.get('treinador')) + "'" + """ 
 
+                for $c in doc('Ligas')/ligas/liga/clube
+                where $c/idclube/text() = $id
+                return (replace value of node $c/pontos with $pontos,
+                        replace value of node $c/posicaoclube with $posicao,
+                        replace value of node $c/vitorias with $vitorias,
+                        replace value of node $c/empates with $empates,
+                        replace value of node $c/treinador with $treinador) 
+                """
+        print(input)
         query = session.query(input)
-        res = query.execute()
+        query.execute()
         query.close()
     finally:
         if session:
             session.close()
     response = redirect('/')
-
     return response
 
 
