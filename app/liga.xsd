@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ligas" type="ligasType"/>
+  <xs:complexType name="jogadorType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="idjogador"/>
+      <xs:element type="xs:string" name="nomejogador"/>
+      <xs:element type="xs:string" name="imagemjogador"/>
+      <xs:element type="xs:string" name="numerojogador"/>
+      <xs:element type="xs:string" name="idade"/>
+      <xs:element type="xs:string" name="nacionalidade"/>
+      <xs:element type="xs:string" name="posicaojogador"/>
+      <xs:element type="xs:string" name="clubesanteriores"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="idjogador" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="jogadoresType">
+    <xs:sequence>
+      <xs:element type="jogadorType" name="jogador" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clubeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="idclube"/>
+      <xs:element type="xs:string" name="nomeclube"/>
+      <xs:element type="xs:string" name="nomecompleto"/>
+      <xs:element type="xs:string" name="sigla"/>
+      <xs:element type="xs:string" name="imagemclube"/>
+      <xs:element type="xs:string" name="posicaoclube"/>
+      <xs:element type="xs:string" name="pontos"/>
+      <xs:element name="vitorias">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="4"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="7"/>
+            <xs:enumeration value="6"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="empates">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="derrotas">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+            <xs:enumeration value="5"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="golosmarcados"/>
+      <xs:element name="golossofridos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="7"/>
+            <xs:enumeration value="6"/>
+            <xs:enumeration value="8"/>
+            <xs:enumeration value="11"/>
+            <xs:enumeration value="9"/>
+            <xs:enumeration value="15"/>
+            <xs:enumeration value="12"/>
+            <xs:enumeration value="13"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="cidade"/>
+      <xs:element type="xs:string" name="estadio"/>
+      <xs:element type="xs:string" name="anofundacao"/>
+      <xs:element type="xs:string" name="presidente"/>
+      <xs:element type="xs:string" name="treinador"/>
+      <xs:element type="jogadoresType" name="jogadores"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="idclube" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ligaType">
+    <xs:sequence>
+      <xs:element name="idliga">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nomeliga">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Liga NOS"/>
+            <xs:enumeration value="Premier League"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="imagemliga">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ligas/portugalprimeira.png"/>
+            <xs:enumeration value="ligas/inglaterraprimeira.png"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="imagempais">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="bandeiras/portugal.png"/>
+            <xs:enumeration value="bandeiras/inglaterra.png"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="pais">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Portugal"/>
+            <xs:enumeration value="Inglaterra"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="clubeType" name="clube" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="idliga" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ligasType">
+    <xs:sequence>
+      <xs:element type="ligaType" name="liga" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
