@@ -4,6 +4,7 @@ from django.template.defaulttags import register
 from BaseXClient import BaseXClient
 import xmltodict
 from django.shortcuts import redirect
+import feedparser
 
 def ligas(request):
     nomes = dict()
@@ -40,14 +41,15 @@ def ligas(request):
         imagensliga[l['idliga']] = l['imagemliga']
         paises[l['idliga']] = l['pais']
         imagenspaises[l['idliga']] = l['imagempais']
-        
+    feed = feedparser.parse('http://feeds.jn.pt/JN-Desporto')
+    print(feed)
     tparams = {
         'nomes': nomes,
         'paisn': paises,
         'pais': imagenspaises,
-        'liga': imagensliga
+        'liga': imagensliga,
+        'feed' : feed
     }
-
     return render(request, 'index.html', tparams)
 
 
@@ -170,6 +172,8 @@ def clube(request):
                           <anofundacao>{$c/anofundacao/text()}</anofundacao>
                           <presidente>{$c/presidente/text()}</presidente>
                           <treinador>{$c/treinador/text()}</treinador>
+                           <liga>{$c/../idliga/text()}</liga>
+                           <nomeliga>{$c/../nomeliga/text()}</nomeliga>
                         </club>
                     }</clube>
                   """
@@ -205,10 +209,7 @@ def clube(request):
     if lres2 != None:
         for c in lres2:
             if c != 'idjogador':
-                if len(c['nomejogador'].split(' '))==2:
-                     info1[c['idjogador']] = c['nomejogador']
-                else:
-                    info1[c['idjogador']] = c['nomejogador']
+                info1[c['idjogador']] = c['nomejogador']
             else:
                 break
         tparams = {
@@ -228,6 +229,10 @@ def clube(request):
             'treinador': lres['treinador'],
             'estadio' : lres['estadio'],
             'idclube' : id,
+            'sigla': lres['sigla'],
+            'nomeinc': lres['nomeclube'],
+            'idliga': lres['liga'],
+            'nomeliga': lres['nomeliga'],
         }
     return render(request, 'clube.html', tparams)
 
@@ -279,30 +284,54 @@ def addLiga(request):
     return render(request, 'novaliga.html', {})
 
 def addLigaXML(request):
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    try:
+        input = """        <liga>{
+                            for $c in doc('Ligas')/ligas/liga
+                            order by $c/idliga
+                              return
+                              <l>
+                                <idliga>{$c/idliga/text()}</idliga>
+                                </l>
+                                }</liga>
+                        """
+        query = session.query(input)
+        res = query.execute()
+        query.close()
+    finally:
+        if session:
+            session.close()
 
-    if request.POST.get('nomeliga')!='' and request.POST.get('nomepais')!='':
-        #session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
-        #try:
-           # input = """
-            #        insert node <liga idliga="4"><nomeliga>"""+request.POST.get('nomeliga')+"""
-             #       </nomeliga><imagemliga>ligas/portugalprimeira.png</imagemliga>
-              #      <imagempais>ligas/portugal.png</imagempais>
-               #     <pais>"""+ request.POST.get('nomepais')+ """</pais>
-                #    </liga> as last into doc('liga')/ligas
-                 #   """
-        #    query = session.query(input)
-         #   res = query.execute()
-          #  query.close()
-        #finally:
-         #   if session:
-          #      session.close()
+    dres = xmltodict.parse(res)
+    lres = dres['liga']['l']
+    liga = request.POST.get('nomeliga')
+    pais =request.POST.get('nomepais')
+    id=lres[len(lres)-1]['idliga']
+    id2=int(lres[len(lres)-1]['idliga'])+1
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    print(pais)
+    try:
+        input = """   let $c := doc('Ligas')/ligas/liga
+                      for $e in $c
+                      where $e/idliga/text() = """ + str(id) + """
+                      return insert node (
+                        <liga idliga='""" + str(id2) + """'>
+                            <idliga>"""+ str(id2) + """</idliga>
+                            <imagempais>bandeiras/""" + str(pais.lower()) + """.png</imagempais>
+                            <nomeliga>""" + str(liga) + """</nomeliga>
+                            <imagemliga>default.png</imagemliga>
+                            <pais>"""+ str(pais) +"""</pais>
+                        </liga>
+                    ) after $e
+                        """
+        query = session.query(input)
+        res = query.execute()
+        query.close()
+    finally:
+        if session:
+            session.close()
 
-        print(request.POST.get('nomeliga'))
-        print(request.POST.get('nomepais'))
-        response = redirect('/')
-    else:
-        response = redirect('/addLiga')
-
+    response = redirect('/')
     return response
 
 def edit_club(request):
@@ -364,13 +393,14 @@ def edit_club(request):
         'treinador': lres['treinador'],
         'estadio' : lres['estadio'],
         'idclube' : id,
+        'sigla' : lres['sigla'],
+        'nomeinc' : lres['nomeclube'],
     }
     return render(request, 'editar_club.html', tparams)
 
 
 def edits_clube(request):
     session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
-    print(str(request.POST.get('treinador')))
     try:
         input = """               
                 let $id := """ + "'" + str(request.GET['idclube']) + "'" + """
@@ -378,15 +408,38 @@ def edits_clube(request):
                 let $posicao := """ + "'" + str(request.POST.get('posicaoclube')) + "'" + """  
                 let $vitorias := """ + "'" + str(request.POST.get('vitorias')) + "'" + """
                 let $empates := """ + "'" + str(request.POST.get('empates')) + "'" + """
+                let $derrotas := """ + "'" + str(request.POST.get('derrotas')) + "'" + """
                 let $treinador := """ + "'" + str(request.POST.get('treinador')) + "'" + """ 
+                let $golossofridos := """ + "'" + str(request.POST.get('golossofridos')) + "'" + """ 
+                let $golosmarcados := """ + "'" + str(request.POST.get('golosmarcados')) + "'" + """ 
+                let $estadio := """ + "'" + str(request.POST.get('estadio')) + "'" + """ 
+                let $presidente := """ + "'" + str(request.POST.get('presidente')) + "'" + """ 
+                let $cidade := """ + "'" + str(request.POST.get('cidade')) + "'" + """ 
+                let $anofund := """ + "'" + str(request.POST.get('anofund')) + "'" + """ 
+                let $nomecompleto := """ + "'" + str(request.POST.get('nomecompleto')) + "'" + """ 
+                let $anofund := """ + "'" + str(request.POST.get('anofund')) + "'" + """ 
+                let $nomeinc := """ + "'" + str(request.POST.get('nomeclube')) + "'" + """ 
+                let $sigla := """ + "'" + str(request.POST.get('sigla')) + "'" + """ 
 
+                
+                
                 for $c in doc('Ligas')/ligas/liga/clube
                 where $c/idclube/text() = $id
                 return (replace value of node $c/pontos with $pontos,
                         replace value of node $c/posicaoclube with $posicao,
                         replace value of node $c/vitorias with $vitorias,
                         replace value of node $c/empates with $empates,
-                        replace value of node $c/treinador with $treinador) 
+                        replace value of node $c/derrotas with $derrotas,
+                        replace value of node $c/treinador with $treinador,
+                        replace value of node $c/golossofridos with $golossofridos,
+                        replace value of node $c/golosmarcados with $golosmarcados,
+                        replace value of node $c/cidade with $cidade,
+                        replace value of node $c/anofundacao with $anofund,
+                        replace value of node $c/estadio with $estadio,
+                        replace value of node $c/presidente with $presidente,
+                        replace value of node $c/sigla with $sigla,
+                        replace value of node $c/nomecompleto with $nomecompleto,
+                        replace value of node $c/nomeclube with $nomeinc) 
                 """
         print(input)
         query = session.query(input)
@@ -395,12 +448,60 @@ def edits_clube(request):
     finally:
         if session:
             session.close()
-    response = redirect('/')
+    response = redirect('/clube?idclube=' + str(request.GET['idclube']))
     return response
 
+def delete_jogador(request):
+    if ('idjogador') in request.GET:
+        id = str(request.GET['idjogador'])
+    else:
+        id = 1
 
-def registers(request):
-    return render(request, 'register.html', {})
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    try:
+        input = """
+                       <jogadores> {
+                           let $idjogador := """ + id + """
+                           for $c in doc('Ligas')/ligas/liga/clube/jogadores
+                           return
+                           for $a in $c//jogador
+                             where $a/idjogador/text() = $idjogador
+                             return
+                             <jogador>
+                               <idclube>{$a/../../idclube/text()}</idclube>
+                             </jogador>
+                       } </jogadores>
+                       """
+        query = session.query(input)
+        res = query.execute()
+        query.close()
+    finally:
+        if session:
+            session.close()
+
+    dres = xmltodict.parse(res)
+    lres = dres['jogadores']['jogador']
+
+    session = BaseXClient.Session('localhost', 1984, 'admin', 'admin')
+    try:
+        input = """
+                let $c := doc('Ligas')/ligas/liga/clube
+                let $j := """ + id +"""
+                for $e in $c
+                return
+                for $d in $e//jogadores/jogador
+                where $d/idjogador/text() = $j
+                return delete node $d
+        """
+        query = session.query(input)
+        query.execute()
+        query.close()
+    finally:
+        if session:
+            session.close()
+
+    response = redirect('/clube?idclube='+lres['idclube'])
+    return response
 
 
 @register.filter

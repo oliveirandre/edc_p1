@@ -26,4 +26,5 @@ urlpatterns = [
         path('addLigaXML', views.addLigaXML, name='addLigaXML'),
         path('editar_club', views.edit_club, name='edit_club'),
         path('edits_club', views.edits_clube, name='edits_club'),
+        path('delete_jogador', views.delete_jogador, name='delete_jogador'),
 ]

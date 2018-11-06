@@ -9,12 +9,21 @@
                     {% csrf_token %}
                     <div class="form-group row">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Nome da Liga" name="nomeliga" id="nomeliga">
+                            <h5 class="header-title">Nome</h5>
+                            <input type="text" class="form-control" placeholder="Nome da Liga" name="nomeliga" id="nomeliga" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="País da Liga" name="nomepais" id="nomepais">
+                            <h5 class="header-title">País</h5>
+                            {% load staticfiles %}
+                            <select class="custom-select" name="nomepais" >
+                                <option>Portugal</option>
+                                <option>Inglaterra</option>
+                                <option>Espanha</option>
+                                <option>Alemanha</option>
+                                <option>França</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-lg-12 mt-5" align="left">

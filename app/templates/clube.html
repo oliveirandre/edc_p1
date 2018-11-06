@@ -1,6 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
      {% load staticfiles %}
+        <div class="col-sm-6">
+        <div class="breadcrumbs-area clearfix">
+            <ul class="breadcrumbs pull-left">
+                <li><a href="index">Home</a></li>
+                <li><a href="tabela?idliga={{ idliga }}">{{ nomeliga }}</a></li>
+                <li><span>{{ sigla }}</span></li>
+            </ul>
+        </div>
+    </div>
             <div class="row" >
                     <!-- basic modal start -->
                     <div class="col-lg-6 mt-5">
@@ -8,6 +17,8 @@
                             <div class="card-body" >
                                 <h4 class="header-title">{{ nomecompleto }}</h4>
                                 </br>
+                                <p><b>Nome:</b>  {{ nomeinc }}</p>
+                                <p><b>Sigla:</b>  {{ sigla }}</p>
                                 <p><b>Ano de Fundação:</b>  {{ fundacao }}</p>
                                 <p><b>Cidade:</b>  {{ cidade }}</p>
                                 <p><b>Presidente:</b>  {{ presidente }}</p>
@@ -74,12 +85,10 @@
                                 <a href="jogador?idjogador={{ k }}"><img src="{% static 'img/primeiraLiga/jogadores/ok.png' %}" width="30px" alt="my img"/></a>
                                 <figcaption><font size="2">{{ v }}</font></figcaption>
                                 <img src="{% static 'img/icons/def.png' %}" width="20px" alt="my img"/>
-                                <img src="{% static 'img/icons/rem.png' %}" width="20px" alt="my img"/>
+                                <a href="/delete_jogador?idjogador={{ k }}"> <img src="{% static 'img/icons/rem.png' %}" width="20px" alt="my img"/></a>
 
                             </figure>
-
                         </th>
-
                     {% endfor %}
                 </tr>
             </table>

@@ -5,7 +5,7 @@
     <idliga>1</idliga>
     <nomeliga>Liga NOS</nomeliga>
     <imagemliga>ligas/portugalprimeira.png</imagemliga>
-    <imagempais>ligas/portugal.png</imagempais>
+    <imagempais>bandeiras/portugal.png</imagempais>
     <pais>Portugal</pais>
 
     <clube idclube="1">
@@ -1271,7 +1271,7 @@
     <idliga>2</idliga>
     <nomeliga>Premier League</nomeliga>
     <imagemliga>ligas/inglaterraprimeira.png</imagemliga>
-    <imagempais>ligas/inglaterra.png</imagempais>
+    <imagempais>bandeiras/inglaterra.png</imagempais>
     <pais>Inglaterra</pais>
 
      <clube idclube="19">

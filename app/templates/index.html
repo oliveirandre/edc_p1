@@ -53,4 +53,15 @@
         </br>
     </div>
 
+
+    <div class="row">
+        {% for entry in feed.entries %}
+              {% load staticfiles %}
+            <img src="http://feeds.feedburner.com/~r/JN-DESPORTO/~4/TpBR-n8eDL0" height="100" width="100" alt=""/>
+            <div class="col-lg-4 col-md-6 mt-5">
+              <a href="{{ entry.link }}">{{ entry.title }}</a>
+            </div>
+        {% endfor %}
+    </div>
+
   {% endblock %}
