@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="stockmarket.xsl" type="text/xsl" version = "2.0" ?>
 
-<ligas>
+<ligas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="liga.xsd">
 
   <liga idliga="1">
     <idliga>1</idliga>

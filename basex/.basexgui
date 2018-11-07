@@ -1,8 +1,8 @@
 # Paths
-INPUTPATH = /home/joaoteixeira/edc_p1/app/liga.xml
+INPUTPATH = /home/andre/PycharmProjects/edc_p1/app/liga.xml
 DATAPATH = /home/joaoteixeira/Desktop/basex/
 WORKPATH = /home/joaoteixeira/edc_p1/app/
-PROJECTPATH = /home/joaoteixeira/edc_p1/app
+PROJECTPATH = /home/andre/PycharmProjects/edc_p1/app
 
 # Layout
 FONT = SansSerif
@@ -86,14 +86,14 @@ SEARCH = 0
 XQUERY = 0
 
 # Files
-EDITOR = 1
-EDITOR1 = /home/joaoteixeira/edc_p1/app/liga.xml
-INPUTS = 1
-INPUTS1 = /home/joaoteixeira/edc_p1/app/liga.xml
-OPEN = 1
-OPEN1 = /home/joaoteixeira/edc_p1/app/liga.xml
-PROJECTS = 1
-PROJECTS1 = /home/joaoteixeira/edc_p1/app
+EDITOR = 0
+INPUTS = 2
+INPUTS1 = /home/andre/PycharmProjects/edc_p1/app/liga.xml
+INPUTS2 = /home/joaoteixeira/edc_p1/app/liga.xml
+OPEN = 0
+PROJECTS = 2
+PROJECTS1 = /home/andre/PycharmProjects/edc_p1/app
+PROJECTS2 = /home/joaoteixeira/edc_p1/app
 PROJFILES = 0
 PROJCONTS = 0
 
