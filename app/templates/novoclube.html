@@ -6,105 +6,102 @@
             <div class="card-body" >
                 <h4 class="header-title">Editar Clube</h4>
 
-                <form class="form-horizontal" method="POST" action="/edits_club?idclube={{ idclube }}" >
+                <form class="form-horizontal" method="POST" action="/news_clube?idclube={{ id }}&idliga={{ idliga }}" >
                     {% csrf_token %}
                     <div class="form-group row" >
                         <div class="col-sm-6 ">
                             <h6>Nome do Clube Completo</h6>
-                            <input type="text" class="form-control" value="{{ nomecompleto }}" name="nomecompleto" id="nomecompleto" required>
+                            <input type="text" class="form-control" placeholder="Nome do Clube Completo" name="nomecompleto" id="nomecompleto" required>
                         </div>
                     </div>
                     <div class="form-group row" >
                         <div class="col-sm-6 ">
                             <h6>Nome incompleto</h6>
-                            <input type="text" class="form-control" value="{{ nomeinc }}" name="nomeclube" id="nomeclube" required>
+                            <input type="text" class="form-control" placeholder="Nome incompleto" name="nomeclube" id="nomeclube" required>
                         </div>
                     </div>
                     <div class="form-group row" >
                         <div class="col-sm-6 ">
                             <h6>Sigla</h6>
-                            <input type="text" class="form-control" value="{{ sigla }}" name="sigla" id="sigla" required>
+                            <input type="text" class="form-control" placeholder="Sigla" name="sigla" id="sigla" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Ano de fundação</h6>
-                            <input type="text" class="form-control" value="{{ fundacao }}" placeholder="Ano de Fundação" name="anofund" id="anofund" required>
+                            <input type="text" class="form-control"  placeholder="Ano de Fundação" name="anofund" id="anofund" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Cidade</h6>
-                            <input type="text" class="form-control" value="{{ cidade }}" name="cidade" id="cidade" required>
+                            <input type="text" class="form-control" placeholder="Cidade" name="cidade" id="cidade" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Presidente</h6>
-                            <input type="text" class="form-control" value="{{ presidente }}" name="presidente" id="presidente" required>
+                            <input type="text" class="form-control" placeholder="Presidente" name="presidente" id="presidente" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Estádio</h6>
-                            <input type="text" class="form-control" value="{{ estadio }}" name="estadio" id="estadio" required>
+                            <input type="text" class="form-control" placeholder="Estádio" name="estadio" id="estadio" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Posição</h6>
-                            <input type="number" class="form-control" value="{{ pos }}" name="posicaoclube" id="posicaoclube" required>
+                            <input type="number" class="form-control" placeholder="Posição" name="posicaoclube" id="posicaoclube" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                               <h6>Pontos</h6>
-                            <input type="number" class="form-control" value="{{ pontos }}" name="pontos" id="pontos" required>
+                            <input type="number" class="form-control" placeholder="Pontos" name="pontos" id="pontos" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Vitórias</h6>
-                            <input type="number" class="form-control" value="{{ vit }}" name="vitorias" id="vitorias" required>
+                            <input type="number" class="form-control" placeholder="Vitórias" name="vitorias" id="vitorias" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Derrotas</h6>
-                            <input type="number" class="form-control" value="{{ derr }}" name="derrotas" id="derrotas" required>
+                            <input type="number" class="form-control" placeholder="Derrotas" name="derrotas" id="derrotas" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Empates</h6>
-                            <input type="number" class="form-control" value="{{ emp }}" name="empates" id="empates" required>
+                            <input type="number" class="form-control" placeholder="Empates" name="empates" id="empates" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Golos Marcados</h6>
-                            <input type="number" class="form-control" value="{{ gm }}" name="golosmarcados" id="golosmarcados" required>
+                            <input type="number" class="form-control" placeholder="Golos Marcados" name="golosmarcados" id="golosmarcados" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Golos Sofridos</h6>
-                            <input type="number" class="form-control" value="{{ gs }}" name="golossofridos" id="golossofridos" required>
+                            <input type="number" class="form-control" placeholder="Golos Sofridos" name="golossofridos" id="golossofridos" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Treinador</h6>
-                            <input type="text" class="form-control" value="{{ treinador }}" name="treinador" id="treinador" required>
+                            <input type="text" class="form-control" placeholder="Treinador" name="treinador" id="treinador" required>
                         </div>
                     </div>
                      <div class="col-lg-12 mt-5" align="left">
                          <button type="submit" class="btn btn-rounded"> <h6>Submeter</h6> </button>
                     </div>
                 </form>
-                <div class="col-lg-12 mt-5" align="left">
-                    <a href="/delete_clube?idclube={{ idclube }}" type="button" class="btn btn-rounded btn-danger mb-3"> <h6>Eliminar Clube</h6> </a>
-                </div>
             </div>
 
         </div>
@@ -112,7 +109,7 @@
         {% load staticfiles %}
         <div class="col-lg-6 mt-5">
             <div class="card-body" align="center">
-                <image src="{% static 'img/' %}{{ clube }}" width="300px"></image>
+                <image src="{% static 'img/default-team.png' %}" width="300px"></image>
             </div>
         </div>
     </div>

@@ -1,72 +1,212 @@
-21:20:41.055	SERVER	admin	OK	Server was started (port: 1984).
-21:20:44.279	127.0.0.1:49684	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	7.17 ms
-21:20:44.606	127.0.0.1:49684	admin	OK	EXEC[0]	327.03 ms
-21:20:44.606	127.0.0.1:49684	admin	OK	CLOSE[0]	0.07 ms
-21:20:44.620	127.0.0.1:49684	admin	REQUEST	EXIT	13.97 ms
-21:20:44.621	127.0.0.1:49684	admin	OK		0.37 ms
-21:20:46.804	127.0.0.1:49810	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.55 ms
-21:20:46.836	127.0.0.1:49810	admin	OK	EXEC[0]	31.87 ms
-21:20:46.837	127.0.0.1:49810	admin	OK	CLOSE[0]	0.05 ms
-21:20:46.837	127.0.0.1:49810	admin	REQUEST	EXIT	0.36 ms
-21:20:46.837	127.0.0.1:49810	admin	OK		0.18 ms
-22:04:57.613	127.0.0.1:50380	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.23 ms
-22:04:57.618	127.0.0.1:50380	admin	OK	EXEC[0]	4.9 ms
-22:04:57.618	127.0.0.1:50380	admin	OK	CLOSE[0]	0.06 ms
-22:04:57.619	127.0.0.1:50380	admin	REQUEST	EXIT	0.33 ms
-22:04:57.619	127.0.0.1:50380	admin	OK		0.18 ms
-22:04:59.099	127.0.0.1:50512	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.43 ms
-22:04:59.114	127.0.0.1:50512	admin	OK	EXEC[0]	15.53 ms
-22:04:59.115	127.0.0.1:50512	admin	OK	CLOSE[0]	0.08 ms
-22:04:59.115	127.0.0.1:50512	admin	REQUEST	EXIT	0.22 ms
-22:04:59.115	127.0.0.1:50512	admin	OK		0.11 ms
-22:05:03.320	127.0.0.1:50598	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.52 ms
-22:05:03.331	127.0.0.1:50598	admin	OK	EXEC[0]	10.35 ms
-22:05:03.331	127.0.0.1:50598	admin	OK	CLOSE[0]	0.07 ms
-22:05:03.332	127.0.0.1:50598	admin	REQUEST	EXIT	0.31 ms
-22:05:03.332	127.0.0.1:50598	admin	OK		0.16 ms
-22:05:46.398	127.0.0.1:50614	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.29 ms
-22:05:46.404	127.0.0.1:50614	admin	OK	EXEC[0]	6.11 ms
-22:05:46.404	127.0.0.1:50614	admin	OK	CLOSE[0]	0.04 ms
-22:05:46.405	127.0.0.1:50614	admin	REQUEST	EXIT	0.26 ms
-22:05:46.405	127.0.0.1:50614	admin	OK		0.13 ms
-22:06:01.407	127.0.0.1:50634	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.2 ms
-22:06:01.414	127.0.0.1:50634	admin	OK	EXEC[0]	6.65 ms
-22:06:01.414	127.0.0.1:50634	admin	OK	CLOSE[0]	0.04 ms
-22:06:01.414	127.0.0.1:50634	admin	REQUEST	EXIT	0.28 ms
-22:06:01.414	127.0.0.1:50634	admin	OK		0.16 ms
-22:07:43.254	127.0.0.1:50672	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.24 ms
-22:07:43.259	127.0.0.1:50672	admin	OK	EXEC[0]	4.64 ms
-22:07:43.259	127.0.0.1:50672	admin	OK	CLOSE[0]	0.05 ms
-22:07:43.260	127.0.0.1:50672	admin	REQUEST	EXIT	0.3 ms
-22:07:43.260	127.0.0.1:50672	admin	OK		0.15 ms
-22:08:50.047	127.0.0.1:50726	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.23 ms
-22:08:50.051	127.0.0.1:50726	admin	OK	EXEC[0]	3.83 ms
-22:08:50.051	127.0.0.1:50726	admin	OK	CLOSE[0]	0.05 ms
-22:08:50.052	127.0.0.1:50726	admin	REQUEST	EXIT	0.29 ms
-22:08:50.052	127.0.0.1:50726	admin	OK		0.15 ms
-22:08:51.474	127.0.0.1:50732	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.17 ms
-22:08:51.484	127.0.0.1:50732	admin	OK	EXEC[0]	9.47 ms
-22:08:51.484	127.0.0.1:50732	admin	OK	CLOSE[0]	0.07 ms
-22:08:51.485	127.0.0.1:50732	admin	REQUEST	EXIT	0.46 ms
-22:08:51.485	127.0.0.1:50732	admin	OK		0.24 ms
-22:09:09.004	127.0.0.1:50760	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.24 ms
-22:09:09.010	127.0.0.1:50760	admin	OK	EXEC[0]	5.61 ms
-22:09:09.010	127.0.0.1:50760	admin	OK	CLOSE[0]	0.04 ms
-22:09:09.011	127.0.0.1:50760	admin	REQUEST	EXIT	0.22 ms
-22:09:09.011	127.0.0.1:50760	admin	OK		0.13 ms
-22:10:10.705	127.0.0.1:50770	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.27 ms
-22:10:10.711	127.0.0.1:50770	admin	OK	EXEC[0]	5.97 ms
-22:10:10.711	127.0.0.1:50770	admin	OK	CLOSE[0]	0.05 ms
-22:10:10.712	127.0.0.1:50770	admin	REQUEST	EXIT	0.28 ms
-22:10:10.712	127.0.0.1:50770	admin	OK		0.15 ms
-22:12:10.719	127.0.0.1:50836	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.25 ms
-22:12:10.726	127.0.0.1:50836	admin	OK	EXEC[0]	6.37 ms
-22:12:10.726	127.0.0.1:50836	admin	OK	CLOSE[0]	0.07 ms
-22:12:10.727	127.0.0.1:50836	admin	REQUEST	EXIT	0.33 ms
-22:12:10.727	127.0.0.1:50836	admin	OK		0.19 ms
-22:14:26.857	127.0.0.1:50954	admin	OK	QUERY[0] <jogadores> { let $idjogador := 2 for $c in doc('Ligas')/ligas/liga/clube/jogadores return for $a in $c//jogador where $a/idjogador/text() = $idjogador return <jogador> <idjogador>{$a/idjogador/text()}</idjogador> <nomejogador>{$a/nomejogador/text()}</nomejogador> <imagemjogador>{$a/imagemjogador/text()}</imagemjogador> <numerojogador>{$a/numerojogador/text()}</numerojogador> <idade>{$a/idade/text()}</idade> <nacionalidade>{$a/nacionalidade/text()}</nacionalidade> <posicaojogador>{$a/posicaojogador/text()}</posicaojogador> <clubesanteriores>{$a/clubesanteriores/text()}</clubesanteriores> </jogador> } </jogadores>	0.24 ms
-22:14:26.861	127.0.0.1:50954	admin	OK	EXEC[0]	4.05 ms
-22:14:26.862	127.0.0.1:50954	admin	OK	CLOSE[0]	0.06 ms
-22:14:26.862	127.0.0.1:50954	admin	REQUEST	EXIT	0.23 ms
-22:14:26.862	127.0.0.1:50954	admin	OK		0.11 ms
-22:28:34.968	SERVER	admin	OK	Server was stopped (port: 1984).
+14:15:58.185	SERVER	admin	OK	Server was started (port: 1984).
+14:16:02.745	127.0.0.1:58480	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	49.0 ms
+14:16:03.343	127.0.0.1:58480	admin	OK	EXEC[0]	585.49 ms
+14:16:03.344	127.0.0.1:58480	admin	OK	CLOSE[0]	0.08 ms
+14:16:03.372	127.0.0.1:58480	admin	REQUEST	EXIT	28.38 ms
+14:16:03.372	127.0.0.1:58480	admin	OK		0.24 ms
+14:16:25.752	127.0.0.1:58564	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.43 ms
+14:16:25.760	127.0.0.1:58564	admin	OK	EXEC[0]	7.9 ms
+14:16:25.760	127.0.0.1:58564	admin	OK	CLOSE[0]	0.1 ms
+14:16:25.762	127.0.0.1:58564	admin	REQUEST	EXIT	0.8 ms
+14:16:25.763	127.0.0.1:58564	admin	OK		0.34 ms
+14:19:52.635	127.0.0.1:58636	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.16 ms
+14:19:52.642	127.0.0.1:58636	admin	OK	EXEC[0]	6.51 ms
+14:19:52.642	127.0.0.1:58636	admin	OK	CLOSE[0]	0.08 ms
+14:19:52.643	127.0.0.1:58636	admin	REQUEST	EXIT	0.41 ms
+14:19:52.643	127.0.0.1:58636	admin	OK		0.22 ms
+14:20:21.169	127.0.0.1:58704	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.23 ms
+14:20:21.177	127.0.0.1:58704	admin	OK	EXEC[0]	7.6 ms
+14:20:21.178	127.0.0.1:58704	admin	OK	CLOSE[0]	0.14 ms
+14:20:21.184	127.0.0.1:58704	admin	REQUEST	EXIT	0.51 ms
+14:20:21.185	127.0.0.1:58704	admin	OK		0.23 ms
+14:20:31.195	127.0.0.1:58772	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.25 ms
+14:20:31.201	127.0.0.1:58772	admin	OK	EXEC[0]	6.0 ms
+14:20:31.201	127.0.0.1:58772	admin	OK	CLOSE[0]	0.05 ms
+14:20:31.202	127.0.0.1:58772	admin	REQUEST	EXIT	0.38 ms
+14:20:31.202	127.0.0.1:58772	admin	OK		0.2 ms
+14:22:17.833	127.0.0.1:58838	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.18 ms
+14:22:17.840	127.0.0.1:58838	admin	OK	EXEC[0]	6.33 ms
+14:22:17.840	127.0.0.1:58838	admin	OK	CLOSE[0]	0.09 ms
+14:22:17.844	127.0.0.1:58838	admin	REQUEST	EXIT	0.47 ms
+14:22:17.845	127.0.0.1:58838	admin	OK		0.29 ms
+14:22:59.391	127.0.0.1:58966	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.19 ms
+14:22:59.396	127.0.0.1:58966	admin	OK	EXEC[0]	5.57 ms
+14:22:59.397	127.0.0.1:58966	admin	OK	CLOSE[0]	0.07 ms
+14:22:59.397	127.0.0.1:58966	admin	REQUEST	EXIT	0.3 ms
+14:22:59.397	127.0.0.1:58966	admin	OK		0.14 ms
+14:23:09.493	127.0.0.1:59030	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.2 ms
+14:23:09.499	127.0.0.1:59030	admin	OK	EXEC[0]	5.89 ms
+14:23:09.500	127.0.0.1:59030	admin	OK	CLOSE[0]	0.08 ms
+14:23:09.501	127.0.0.1:59030	admin	REQUEST	EXIT	0.5 ms
+14:23:09.502	127.0.0.1:59030	admin	OK		0.27 ms
+14:23:27.752	127.0.0.1:59098	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.13 ms
+14:23:27.757	127.0.0.1:59098	admin	OK	EXEC[0]	5.05 ms
+14:23:27.757	127.0.0.1:59098	admin	OK	CLOSE[0]	0.06 ms
+14:23:27.758	127.0.0.1:59098	admin	REQUEST	EXIT	0.37 ms
+14:23:27.758	127.0.0.1:59098	admin	OK		0.19 ms
+14:23:34.723	127.0.0.1:59162	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.2 ms
+14:23:34.726	127.0.0.1:59162	admin	OK	EXEC[0]	3.55 ms
+14:23:34.727	127.0.0.1:59162	admin	OK	CLOSE[0]	0.06 ms
+14:23:34.727	127.0.0.1:59162	admin	REQUEST	EXIT	0.37 ms
+14:23:34.727	127.0.0.1:59162	admin	OK		0.19 ms
+14:23:43.032	127.0.0.1:59226	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.2 ms
+14:23:43.039	127.0.0.1:59226	admin	OK	EXEC[0]	6.15 ms
+14:23:43.039	127.0.0.1:59226	admin	OK	CLOSE[0]	0.06 ms
+14:23:43.044	127.0.0.1:59226	admin	REQUEST	EXIT	0.5 ms
+14:23:43.045	127.0.0.1:59226	admin	OK		0.36 ms
+14:23:48.324	127.0.0.1:59290	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.21 ms
+14:23:48.328	127.0.0.1:59290	admin	OK	EXEC[0]	3.77 ms
+14:23:48.328	127.0.0.1:59290	admin	OK	CLOSE[0]	0.1 ms
+14:23:48.329	127.0.0.1:59290	admin	REQUEST	EXIT	0.47 ms
+14:23:48.329	127.0.0.1:59290	admin	OK		0.27 ms
+14:23:54.431	127.0.0.1:59354	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.2 ms
+14:23:54.436	127.0.0.1:59354	admin	OK	EXEC[0]	4.13 ms
+14:23:54.436	127.0.0.1:59354	admin	OK	CLOSE[0]	0.08 ms
+14:23:54.437	127.0.0.1:59354	admin	REQUEST	EXIT	0.36 ms
+14:23:54.437	127.0.0.1:59354	admin	OK		0.18 ms
+14:23:59.702	127.0.0.1:59418	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.16 ms
+14:23:59.706	127.0.0.1:59418	admin	OK	EXEC[0]	3.6 ms
+14:23:59.706	127.0.0.1:59418	admin	OK	CLOSE[0]	0.06 ms
+14:23:59.707	127.0.0.1:59418	admin	REQUEST	EXIT	0.35 ms
+14:23:59.707	127.0.0.1:59418	admin	OK		0.25 ms
+14:24:42.742	127.0.0.1:59484	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.27 ms
+14:24:42.750	127.0.0.1:59484	admin	OK	EXEC[0]	6.98 ms
+14:24:42.750	127.0.0.1:59484	admin	OK	CLOSE[0]	0.09 ms
+14:24:42.751	127.0.0.1:59484	admin	REQUEST	EXIT	0.52 ms
+14:24:42.751	127.0.0.1:59484	admin	OK		0.29 ms
+14:24:59.567	127.0.0.1:59552	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.18 ms
+14:24:59.574	127.0.0.1:59552	admin	OK	EXEC[0]	6.32 ms
+14:24:59.574	127.0.0.1:59552	admin	OK	CLOSE[0]	0.07 ms
+14:24:59.575	127.0.0.1:59552	admin	REQUEST	EXIT	0.41 ms
+14:24:59.575	127.0.0.1:59552	admin	OK		0.23 ms
+14:25:21.311	127.0.0.1:59616	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.18 ms
+14:25:21.315	127.0.0.1:59616	admin	OK	EXEC[0]	3.63 ms
+14:25:21.315	127.0.0.1:59616	admin	OK	CLOSE[0]	0.05 ms
+14:25:21.316	127.0.0.1:59616	admin	REQUEST	EXIT	0.45 ms
+14:25:21.316	127.0.0.1:59616	admin	OK		0.27 ms
+14:25:38.915	127.0.0.1:59680	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.18 ms
+14:25:38.919	127.0.0.1:59680	admin	OK	EXEC[0]	4.19 ms
+14:25:38.919	127.0.0.1:59680	admin	OK	CLOSE[0]	0.06 ms
+14:25:38.920	127.0.0.1:59680	admin	REQUEST	EXIT	0.41 ms
+14:25:38.920	127.0.0.1:59680	admin	OK		0.22 ms
+15:34:24.344	127.0.0.1:33166	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.11 ms
+15:34:24.347	127.0.0.1:33166	admin	OK	EXEC[0]	3.12 ms
+15:34:24.348	127.0.0.1:33166	admin	OK	CLOSE[0]	0.07 ms
+15:34:24.348	127.0.0.1:33166	admin	REQUEST	EXIT	0.33 ms
+15:34:24.348	127.0.0.1:33166	admin	OK		0.17 ms
+15:34:59.261	127.0.0.1:33200	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.22 ms
+15:34:59.265	127.0.0.1:33200	admin	OK	EXEC[0]	4.74 ms
+15:34:59.270	127.0.0.1:33200	admin	OK	CLOSE[0]	0.13 ms
+15:34:59.271	127.0.0.1:33200	admin	REQUEST	EXIT	0.39 ms
+15:34:59.271	127.0.0.1:33200	admin	OK		0.21 ms
+15:35:26.904	127.0.0.1:33292	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.2 ms
+15:35:26.907	127.0.0.1:33292	admin	OK	EXEC[0]	2.88 ms
+15:35:26.907	127.0.0.1:33292	admin	OK	CLOSE[0]	0.04 ms
+15:35:26.908	127.0.0.1:33292	admin	REQUEST	EXIT	0.32 ms
+15:35:26.908	127.0.0.1:33292	admin	OK		0.18 ms
+15:36:41.454	127.0.0.1:33374	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.2 ms
+15:36:41.458	127.0.0.1:33374	admin	OK	EXEC[0]	4.18 ms
+15:36:41.459	127.0.0.1:33374	admin	OK	CLOSE[0]	0.11 ms
+15:36:41.459	127.0.0.1:33374	admin	REQUEST	EXIT	0.34 ms
+15:36:41.459	127.0.0.1:33374	admin	OK		0.19 ms
+15:36:49.728	127.0.0.1:33388	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.14 ms
+15:36:49.779	127.0.0.1:33388	admin	OK	EXEC[0]	50.88 ms
+15:36:49.779	127.0.0.1:33388	admin	OK	CLOSE[0]	0.05 ms
+15:36:49.779	127.0.0.1:33388	admin	REQUEST	EXIT	0.29 ms
+15:36:49.780	127.0.0.1:33388	admin	OK		0.19 ms
+15:37:34.597	127.0.0.1:33484	admin	OK	QUERY[0] <liga> { let $idliga := 2 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.18 ms
+15:37:34.604	127.0.0.1:33484	admin	OK	EXEC[0]	6.85 ms
+15:37:34.605	127.0.0.1:33484	admin	OK	CLOSE[0]	0.08 ms
+15:37:34.607	127.0.0.1:33484	admin	REQUEST	EXIT	0.33 ms
+15:37:34.607	127.0.0.1:33484	admin	OK		0.17 ms
+15:37:47.335	127.0.0.1:33536	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.23 ms
+15:37:47.345	127.0.0.1:33536	admin	OK	EXEC[0]	9.45 ms
+15:37:47.345	127.0.0.1:33536	admin	OK	CLOSE[0]	0.08 ms
+15:37:47.349	127.0.0.1:33536	admin	REQUEST	EXIT	0.47 ms
+15:37:47.349	127.0.0.1:33536	admin	OK		0.29 ms
+16:33:24.569	127.0.0.1:35668	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.15 ms
+16:33:24.572	127.0.0.1:35668	admin	OK	EXEC[0]	3.14 ms
+16:33:24.573	127.0.0.1:35668	admin	OK	CLOSE[0]	0.15 ms
+16:33:24.574	127.0.0.1:35668	admin	REQUEST	EXIT	0.37 ms
+16:33:24.574	127.0.0.1:35668	admin	OK		0.22 ms
+16:38:51.476	127.0.0.1:36158	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.18 ms
+16:38:51.480	127.0.0.1:36158	admin	OK	EXEC[0]	4.45 ms
+16:38:51.481	127.0.0.1:36158	admin	OK	CLOSE[0]	0.08 ms
+16:38:51.481	127.0.0.1:36158	admin	REQUEST	EXIT	0.36 ms
+16:38:51.482	127.0.0.1:36158	admin	OK		0.41 ms
+16:40:47.618	127.0.0.1:36178	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.12 ms
+16:40:47.621	127.0.0.1:36178	admin	OK	EXEC[0]	2.68 ms
+16:40:47.622	127.0.0.1:36178	admin	OK	CLOSE[0]	0.06 ms
+16:40:47.622	127.0.0.1:36178	admin	REQUEST	EXIT	0.34 ms
+16:40:47.622	127.0.0.1:36178	admin	OK		0.18 ms
+16:42:59.846	127.0.0.1:36248	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.11 ms
+16:42:59.848	127.0.0.1:36248	admin	OK	EXEC[0]	2.8 ms
+16:42:59.849	127.0.0.1:36248	admin	OK	CLOSE[0]	0.06 ms
+16:42:59.849	127.0.0.1:36248	admin	REQUEST	EXIT	0.35 ms
+16:42:59.849	127.0.0.1:36248	admin	OK		0.21 ms
+16:44:21.792	127.0.0.1:36344	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.13 ms
+16:44:21.796	127.0.0.1:36344	admin	OK	EXEC[0]	3.54 ms
+16:44:21.797	127.0.0.1:36344	admin	OK	CLOSE[0]	0.1 ms
+16:44:21.798	127.0.0.1:36344	admin	REQUEST	EXIT	0.33 ms
+16:44:21.798	127.0.0.1:36344	admin	OK		0.17 ms
+16:49:50.607	127.0.0.1:36410	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.43 ms
+16:49:50.615	127.0.0.1:36410	admin	OK	EXEC[0]	6.75 ms
+16:49:50.615	127.0.0.1:36410	admin	OK	CLOSE[0]	0.07 ms
+16:49:50.616	127.0.0.1:36410	admin	REQUEST	EXIT	0.4 ms
+16:49:50.616	127.0.0.1:36410	admin	OK		0.22 ms
+16:50:01.685	127.0.0.1:36476	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.13 ms
+16:50:01.688	127.0.0.1:36476	admin	OK	EXEC[0]	2.51 ms
+16:50:01.688	127.0.0.1:36476	admin	OK	CLOSE[0]	0.04 ms
+16:50:01.688	127.0.0.1:36476	admin	REQUEST	EXIT	0.42 ms
+16:50:01.689	127.0.0.1:36476	admin	OK		0.27 ms
+16:50:28.215	127.0.0.1:36540	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.17 ms
+16:50:28.225	127.0.0.1:36540	admin	OK	EXEC[0]	9.56 ms
+16:50:28.225	127.0.0.1:36540	admin	OK	CLOSE[0]	0.07 ms
+16:50:28.227	127.0.0.1:36540	admin	REQUEST	EXIT	0.28 ms
+16:50:28.227	127.0.0.1:36540	admin	OK		0.14 ms
+16:50:46.241	127.0.0.1:36604	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.15 ms
+16:50:46.243	127.0.0.1:36604	admin	OK	EXEC[0]	2.33 ms
+16:50:46.243	127.0.0.1:36604	admin	OK	CLOSE[0]	0.08 ms
+16:50:46.244	127.0.0.1:36604	admin	REQUEST	EXIT	0.32 ms
+16:50:46.244	127.0.0.1:36604	admin	OK		0.21 ms
+16:51:56.625	127.0.0.1:36672	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.12 ms
+16:51:56.628	127.0.0.1:36672	admin	OK	EXEC[0]	3.2 ms
+16:51:56.629	127.0.0.1:36672	admin	OK	CLOSE[0]	0.07 ms
+16:51:56.630	127.0.0.1:36672	admin	REQUEST	EXIT	0.35 ms
+16:51:56.630	127.0.0.1:36672	admin	OK		0.21 ms
+16:52:04.636	127.0.0.1:36736	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.1 ms
+16:52:04.639	127.0.0.1:36736	admin	OK	EXEC[0]	3.18 ms
+16:52:04.640	127.0.0.1:36736	admin	OK	CLOSE[0]	0.09 ms
+16:52:04.640	127.0.0.1:36736	admin	REQUEST	EXIT	0.49 ms
+16:52:04.641	127.0.0.1:36736	admin	OK		0.24 ms
+16:53:19.484	127.0.0.1:36810	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.2 ms
+16:53:19.487	127.0.0.1:36810	admin	OK	EXEC[0]	3.22 ms
+16:53:19.487	127.0.0.1:36810	admin	OK	CLOSE[0]	0.08 ms
+16:53:19.488	127.0.0.1:36810	admin	REQUEST	EXIT	0.5 ms
+16:53:19.488	127.0.0.1:36810	admin	OK		0.27 ms
+16:58:17.043	127.0.0.1:36850	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.12 ms
+16:58:17.046	127.0.0.1:36850	admin	OK	EXEC[0]	3.04 ms
+16:58:17.046	127.0.0.1:36850	admin	OK	CLOSE[0]	0.08 ms
+16:58:17.053	127.0.0.1:36850	admin	REQUEST	EXIT	0.42 ms
+16:58:17.053	127.0.0.1:36850	admin	OK		0.2 ms
+17:01:11.078	127.0.0.1:36868	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.19 ms
+17:01:11.080	127.0.0.1:36868	admin	OK	EXEC[0]	2.22 ms
+17:01:11.080	127.0.0.1:36868	admin	OK	CLOSE[0]	0.05 ms
+17:01:11.081	127.0.0.1:36868	admin	REQUEST	EXIT	0.3 ms
+17:01:11.081	127.0.0.1:36868	admin	OK		0.16 ms
+19:53:06.966	127.0.0.1:38066	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.17 ms
+19:53:06.969	127.0.0.1:38066	admin	OK	EXEC[0]	2.76 ms
+19:53:06.970	127.0.0.1:38066	admin	OK	CLOSE[0]	0.1 ms
+19:53:06.970	127.0.0.1:38066	admin	REQUEST	EXIT	0.31 ms
+19:53:06.970	127.0.0.1:38066	admin	OK		0.14 ms
+19:53:25.193	127.0.0.1:38086	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.08 ms
+19:53:25.196	127.0.0.1:38086	admin	OK	EXEC[0]	2.12 ms
+19:53:25.196	127.0.0.1:38086	admin	OK	CLOSE[0]	0.04 ms
+19:53:25.196	127.0.0.1:38086	admin	REQUEST	EXIT	0.24 ms
+19:53:25.196	127.0.0.1:38086	admin	OK		0.11 ms
+19:58:46.212	127.0.0.1:38114	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.21 ms
+19:58:46.215	127.0.0.1:38114	admin	OK	EXEC[0]	3.0 ms
+19:58:46.216	127.0.0.1:38114	admin	OK	CLOSE[0]	0.07 ms
+19:58:46.216	127.0.0.1:38114	admin	REQUEST	EXIT	0.37 ms
+19:58:46.216	127.0.0.1:38114	admin	OK		0.22 ms
+20:52:13.219	SERVER	admin	OK	Server was stopped (port: 1984).

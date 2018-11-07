@@ -52,11 +52,14 @@
                             {% endfor %}
                     </tbody>
                 </table>
-            <a href="editar_club?idclube={{ k }}"class="btn btn-md btn-info" type="button"><font color="white">Adicionar Equipa</font></a>
-
+            <a href="new_clube?idliga={{ idliga }}"class="btn btn-md btn-info" type="button"><font color="white">Adicionar Equipa</font></a>
+                <div class="col-lg-12 mt-5" align="center">
+                    <a href="/delete_liga?idliga={{ idliga }}" type="button" class="btn btn-rounded btn-danger mb-3"> <h6>Eliminar Liga</h6> </a>
+                </div>
             </div>
         </div>
         </div>
+
         </div>
 
  {% endblock %}

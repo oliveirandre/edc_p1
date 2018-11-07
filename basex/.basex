@@ -1,8 +1,8 @@
 # General Options
 DEBUG = false
-DBPATH = /home/andre/basex/data
+DBPATH = /home/joaoteixeira/Desktop/basex/data
 LOGPATH = .logs
-REPOPATH = /home/andre/basex/repo
+REPOPATH = /home/joaoteixeira/Desktop/basex/repo
 LANG = English
 LANGKEYS = false
 FAIRLOCK = false
@@ -27,7 +27,7 @@ LOG = true
 LOGMSGMAXLEN = 1000
 
 # HTTP Services
-WEBPATH = /home/andre/basex/webapp
+WEBPATH = /home/joaoteixeira/Desktop/basex/webapp
 RESTPATH = 
 RESTXQPATH = 
 PARSERESTXQ = 3

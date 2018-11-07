@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stockmarket.xsl" type="text/xsl" version = "2.0" ?>
+
 <ligas>
 
   <liga idliga="1">
@@ -835,16 +837,6 @@
       <presidente>António da Silva Campos</presidente>
       <treinador>Miguel Cardoso</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -867,16 +859,6 @@
       <presidente>Rui Cordeiro</presidente>
       <treinador>João Henriques</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -899,16 +881,6 @@
       <presidente>Júlio Mendes</presidente>
       <treinador>Luís Castro</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -931,16 +903,6 @@
       <presidente>José Carlos Pereira</presidente>
       <treinador>Cláudio Braga</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -963,16 +925,6 @@
       <presidente>Rodrigo Nunes</presidente>
       <treinador>Nuno Manta Santos</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -995,16 +947,6 @@
       <presidente>Vitor Hugo Valente</presidente>
       <treinador>Lito Vidigal</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1027,16 +969,6 @@
       <presidente>João Loureiro</presidente>
       <treinador>Jorge Simão</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1059,16 +991,6 @@
       <presidente>Patrick Morais de Carvalho</presidente>
       <treinador>Nuno Oliveira</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1091,16 +1013,6 @@
       <presidente>Fernando Rocha</presidente>
       <treinador>António Folha</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1123,16 +1035,6 @@
       <presidente>Bruno Carvalho</presidente>
       <treinador>Daniel Ramos</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1155,16 +1057,6 @@
       <presidente>Vitor Magalhães</presidente>
       <treinador>Petit</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1187,16 +1079,6 @@
       <presidente>Gilberto Neves Coimbra</presidente>
       <treinador>Pepa</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1219,16 +1101,6 @@
       <presidente>Rui António Macedo Alves</presidente>
       <treinador>Costinha</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1251,16 +1123,6 @@
       <presidente>Armando Silva</presidente>
       <treinador>José Mota</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1293,16 +1155,6 @@
         <presidente>Khaldoon Al Mubarak</presidente>
         <treinador>Pep Guardiola</treinador>
         <jogadores>
-          <jogador>
-            <idjogador></idjogador>
-            <nomejogador></nomejogador>
-            <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-            <numerojogador></numerojogador>
-            <idade></idade>
-            <nacionalidade></nacionalidade>
-            <posicaojogador></posicaojogador>
-            <clubesanteriores></clubesanteriores>
-          </jogador>
         </jogadores>
       </clube>
 
@@ -1325,16 +1177,6 @@
       <presidente>Tom Werner</presidente>
       <treinador>Jürgen Klopp</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1357,16 +1199,6 @@
       <presidente>Bruce Buck</presidente>
       <treinador>Maurizio Sarri</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1389,16 +1221,6 @@
       <presidente>Sir Chips Keswick</presidente>
       <treinador>Unai Emery</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
 
@@ -1421,16 +1243,6 @@
       <presidente>Daniel Levy</presidente>
       <treinador>Mauricio Pochettino</treinador>
       <jogadores>
-        <jogador>
-          <idjogador></idjogador>
-          <nomejogador></nomejogador>
-          <imagemjogador>primeiraLiga/jogadores/ok.png</imagemjogador>
-          <numerojogador></numerojogador>
-          <idade></idade>
-          <nacionalidade></nacionalidade>
-          <posicaojogador></posicaojogador>
-          <clubesanteriores></clubesanteriores>
-        </jogador>
       </jogadores>
     </clube>
   </liga>

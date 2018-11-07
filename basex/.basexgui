@@ -1,8 +1,8 @@
 # Paths
-INPUTPATH = /home/andre/PycharmProjects/edc_p1/app/liga.xml
-DATAPATH = /home/andre/basex/
-WORKPATH = /home/andre/PycharmProjects/edc_p1/basex/bin/
-PROJECTPATH = /home/andre/Desktop
+INPUTPATH = /home/joaoteixeira/edc_p1/app/liga.xml
+DATAPATH = /home/joaoteixeira/Desktop/basex/
+WORKPATH = /home/joaoteixeira/edc_p1/app/
+PROJECTPATH = /home/joaoteixeira/edc_p1/app
 
 # Layout
 FONT = SansSerif
@@ -16,15 +16,15 @@ COLORBLUE = 6
 
 # Windows
 UPDATEVERSION = 9.1
-VIEWS = V H editor folder map plot - H text info table tree explore - - 
-GUISIZE0 = 927
-GUISIZE1 = 1055
-GUILOC0 = 993
-GUILOC1 = 25
-MAXSTATE = false
+VIEWS = V H editor folder map plot - H info text table tree explore - - 
+GUISIZE0 = 1004
+GUISIZE1 = 741
+GUILOC0 = 47
+GUILOC1 = 27
+MAXSTATE = true
 SHOWBUTTONS = true
 SHOWINPUT = true
-SHOWSTATUS = false
+SHOWSTATUS = true
 SHOWINFO = true
 SHOWMAP = true
 SHOWTABLE = false
@@ -34,7 +34,7 @@ SHOWEXPLORE = false
 SHOWPLOT = false
 SHOWEDITOR = true
 SHOWTREE = false
-SHOWPROJECT = false
+SHOWPROJECT = true
 PREFTAB = 0
 LOOKANDFEEL = 
 SHOWNAME = true
@@ -57,7 +57,7 @@ PARSEPROJ = true
 AUTO = true
 FILES = *.xml, *.xq*
 HIDDENFILES = true
-SEARCHMODE = 1
+SEARCHMODE = 0
 FILTERRT = false
 EXECRT = false
 DBNAME = liga
@@ -83,54 +83,17 @@ REPLACED = 0
 # History
 COMMANDS = 0
 SEARCH = 0
-XQUERY = 18
-XQUERY1 = for $i in collection("cursos")//curso return <curso>{ guid , nome }</curso>
-XQUERY2 = for $i in collection("cursos") return <curso>{ guid , nome }</curso>
-XQUERY3 = for $i =
-XQUERY4 = for $i in collection("cursos.xml") return <curso>{ guid, nome }</curso>
-XQUERY5 = for $i in collection("cursos") return <curso>{ guid, nome }</curso>
-XQUERY6 = for $i in collection ("cursos") return <curso>{ guid, nome }</curso>
-XQUERY7 = for $i in collection ("cursos") return <curso>{ $i/guid, $i/nome }</curso>
-XQUERY8 = for $i in collection ("cursos") return <curso>{ $i/guid, $i/nome }
-XQUERY9 = for $i in collection ("cursos") return <curso>{ $i/, $i/ }
-XQUERY10 = for $i in collection ("cursos") return <curso>{ , }
-XQUERY11 = for $i in collection ("cursos") return <curso>
-XQUERY12 = for $i in collection ("cursos") return curso
-XQUERY13 = for $i in collection ("cursos") let $c :=
-XQUERY14 = for $i in collection ("cursos") let $c
-XQUERY15 = for $i in collection ("cursos")
-XQUERY16 = for $i in collection ("curso")
-XQUERY17 = for $i in collection "curso
-XQUERY18 = for $i in collection
+XQUERY = 0
 
 # Files
-EDITOR = 18
-EDITOR1 = /home/andre/PycharmProjects/edc_p1/basex/bin/index.xqm
-EDITOR2 = /home/andre/PycharmProjects/edc_p1/basex/repo/com/funcs/my/index.xq
-EDITOR3 = /home/andre/PycharmProjects/edc_p1/basex/repo/com/funcs/my/index.xqm
-EDITOR4 = /home/andre/PycharmProjects/edc_p1/app/queries/deletejogador.xql
-EDITOR5 = /home/andre/PycharmProjects/edc_p1/app/queries/insertclube.xql
-EDITOR6 = /home/andre/PycharmProjects/edc_p1/app/queries/insertjogador.xql
-EDITOR7 = /home/andre/PycharmProjects/edc_p1/app/queries/deleteclube.xql
-EDITOR8 = /home/andre/PycharmProjects/edc_p1/app/queries/deleteliga.xql
-EDITOR9 = /home/andre/PycharmProjects/edc_p1/app/queries/insertliga.xql
-EDITOR10 = /home/andre/Dropbox/4º Ano/EDC/Aula05/query2.xql
-EDITOR11 = /home/andre/Dropbox/4º Ano/EDC/Aula04/query2.xql
-EDITOR12 = /home/andre/Dropbox/4º Ano/EDC/Aula05/query3.xql
-EDITOR13 = /home/andre/Dropbox/4º Ano/EDC/Aula05/query1.xql
-EDITOR14 = /home/andre/Dropbox/4º Ano/EDC/Aula04/jogadores.xql
-EDITOR15 = /home/andre/Dropbox/4º Ano/EDC/Aula04/query4.xql
-EDITOR16 = /home/andre/Dropbox/4º Ano/EDC/Aula04/jogadores.xml
-EDITOR17 = /home/andre/Dropbox/4º Ano/EDC/Aula04/query1.xql
-EDITOR18 = /home/andre/Dropbox/4º Ano/EDC/Aula05/udf_insertnode.xql
-INPUTS = 3
-INPUTS1 = /home/andre/PycharmProjects/edc_p1/app/liga.xml
-INPUTS2 = /home/andre/Desktop/cursos.xml
-INPUTS3 = /home/andre/basex/
+EDITOR = 1
+EDITOR1 = /home/joaoteixeira/edc_p1/app/liga.xml
+INPUTS = 1
+INPUTS1 = /home/joaoteixeira/edc_p1/app/liga.xml
 OPEN = 1
-OPEN1 = /home/andre/PycharmProjects/edc_p1/basex/bin/index.xqm
+OPEN1 = /home/joaoteixeira/edc_p1/app/liga.xml
 PROJECTS = 1
-PROJECTS1 = /home/andre/Desktop
+PROJECTS1 = /home/joaoteixeira/edc_p1/app
 PROJFILES = 0
 PROJCONTS = 0
 

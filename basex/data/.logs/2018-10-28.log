@@ -1,0 +1,24 @@
+22:52:53.728	SERVER	admin	OK	Server was started (port: 1984).
+22:53:00.469	127.0.0.1:57864	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	5.69 ms
+22:53:00.695	127.0.0.1:57864	admin	REQUEST	EXEC[0]	224.43 ms
+22:53:00.695	127.0.0.1:57864	admin	ERROR	Stopped at ., 3/34: [FODC0002] Resource '/home/joaoteixeira/Desktop/basex/bin/Ligas' does not exist.	0.14 ms
+22:53:00.709	127.0.0.1:57864	admin	REQUEST	EXIT	13.72 ms
+22:53:00.709	127.0.0.1:57864	admin	OK		0.33 ms
+22:56:22.768	SERVER	admin	OK	Server was stopped (port: 1984).
+22:56:23.773	SERVER	admin	OK	Server was started (port: 1984).
+22:56:26.193	127.0.0.1:57872	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	7.05 ms
+22:56:26.538	127.0.0.1:57872	admin	OK	EXEC[0]	343.96 ms
+22:56:26.539	127.0.0.1:57872	admin	OK	CLOSE[0]	0.11 ms
+22:56:26.555	127.0.0.1:57872	admin	REQUEST	EXIT	15.87 ms
+22:56:26.555	127.0.0.1:57872	admin	OK		0.44 ms
+23:05:08.511	127.0.0.1:57994	admin	OK	QUERY[0] <liga> { let $idliga := "1" for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.58 ms
+23:05:08.567	127.0.0.1:57994	admin	OK	EXEC[0]	52.42 ms
+23:05:08.567	127.0.0.1:57994	admin	OK	CLOSE[0]	0.1 ms
+23:05:08.568	127.0.0.1:57994	admin	REQUEST	EXIT	0.41 ms
+23:05:08.568	127.0.0.1:57994	admin	OK		0.22 ms
+23:05:41.790	127.0.0.1:58142	admin	OK	QUERY[0] <liga> { let $idliga := "2" for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.36 ms
+23:05:41.808	127.0.0.1:58142	admin	OK	EXEC[0]	16.89 ms
+23:05:41.808	127.0.0.1:58142	admin	OK	CLOSE[0]	0.08 ms
+23:05:41.811	127.0.0.1:58142	admin	REQUEST	EXIT	0.48 ms
+23:05:41.812	127.0.0.1:58142	admin	OK		0.27 ms
+23:40:48.068	SERVER	admin	OK	Server was stopped (port: 1984).

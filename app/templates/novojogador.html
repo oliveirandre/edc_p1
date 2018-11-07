@@ -4,44 +4,44 @@
     <div class="col-6 mt-5">
         <div class="card" style="margin-left:120px;">
             <div class="card-body" >
-                <h4 class="header-title">Editar Jogador</h4>
+                <h4 class="header-title">Novo Jogador</h4>
 
-                <form class="form-horizontal" method="POST" action="/edits_jogador?idjogador={{ id }}" >
+                <form class="form-horizontal" method="POST" action="/new_jogador?idjogador={{ id }}&idclube={{ idclube }}" >
                     {% csrf_token %}
                     <div class="form-group row" >
                         <div class="col-sm-6 ">
                             <h6>Nome</h6>
-                            <input type="text" class="form-control" value="{{ nome }}" name="nome" id="nome" required>
+                            <input type="text" class="form-control" name="nome" id="nome" required>
                         </div>
                     </div>
                     <div class="form-group row" >
                         <div class="col-sm-6 ">
                             <h6>Número</h6>
-                            <input type="number" class="form-control" value="{{ numero }}" name="numero" id="numero" required>
+                            <input type="number" class="form-control" name="numero" id="numero" required>
                         </div>
                     </div>
                     <div class="form-group row" >
                         <div class="col-sm-6 ">
                             <h6>Nacionalidade</h6>
-                            <input type="text" class="form-control" value="{{ nacional }}" name="nacionalidade" id="nacionalidade" required>
+                            <input type="text" class="form-control" name="nacionalidade" id="nacionalidade" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Posição</h6>
-                            <input type="text" class="form-control" value="{{ posicao }}" name="posicao" id="posicao" required>
+                            <input type="text" class="form-control" name="posicao" id="posicao" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Idade</h6>
-                            <input type="number" class="form-control" value="{{ idade }}" name="idade" id="idade" required>
+                            <input type="number" class="form-control" name="idade" id="idade" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <h6>Clubes Anteriores</h6>
-                            <input type="text" class="form-control" value="{{ anteriores }}" name="clubes" id="clubes" required>
+                            <input type="text" class="form-control"  name="clubes" id="clubes" required>
                         </div>
                     </div>
                      <div class="col-lg-12 mt-5" align="left">
@@ -55,7 +55,7 @@
         {% load staticfiles %}
         <div class="col-lg-6 mt-5">
             <div class="card-body" align="center">
-                <image src="{% static 'img/' %}{{ imagem }}" width="300px"></image>
+                <image src="{% static 'img/primeiraLiga/jogadores/ok.png' %}" width="300px"></image>
             </div>
         </div>
     </div>

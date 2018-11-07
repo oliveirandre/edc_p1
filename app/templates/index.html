@@ -21,6 +21,9 @@
                                             </li>
                                         {% endwith %}
                                     {% endfor %}
+                                    <li><a href="feed"><image src="{% static 'img/icons/news.png' %}" width="30" heigth="15">Notícias</a></li>
+                                    <li><a href="xslt_run" type="submit" download><image src="{% static 'img/icons/xlts.png' %}" width="30" heigth="15">xslt</a></li>
+
                                 </ul>
                             </nav>
                         </div>
@@ -54,14 +57,5 @@
     </div>
 
 
-    <div class="row">
-        {% for entry in feed.entries %}
-              {% load staticfiles %}
-            <img src="http://feeds.feedburner.com/~r/JN-DESPORTO/~4/TpBR-n8eDL0" height="100" width="100" alt=""/>
-            <div class="col-lg-4 col-md-6 mt-5">
-              <a href="{{ entry.link }}">{{ entry.title }}</a>
-            </div>
-        {% endfor %}
-    </div>
 
   {% endblock %}

@@ -40,6 +40,7 @@ declare function funcs:deleteJogador($id) as node(){
 declare function funcs:listLigas() as node () {
   <ligas> {
   for $c in doc('Ligas')/ligas/liga
+  order by $c/pais/text()
   return
     <liga>
       <idliga>{$c/idliga/text()}</idliga>
@@ -113,6 +114,30 @@ declare function funcs:showJogadores($idclube) as node() {
     return $d  
 };
 
+declare updating function funcs:updateJogador($idjogador, $nome, $numero, $nacionalidade, $posicao, $idade, $anteriores) {
+  for $a in doc('Ligas')/ligas/liga/clube/jogadores
+  return
+  for $c in $a//jogador
+  where $c/idjogador/text() = $idjogador
+  return (replace value of node $c/nomejogador with $nome,
+          replace value of node $c/numerojogador with $numero,
+          replace value of node $c/nacionalidade with $nacionalidade,
+          replace value of node $c/posicaojogador with $posicao,
+          replace value of node $c/idade with $idade,
+          replace value of node $c/clubesanteriores with $anteriores) 
+};
+
+declare function funcs:ligaInfo($idliga) as node() {
+  let $id := $idliga
+  for $c in doc('Ligas')/ligas/liga
+  where $c/idliga/text()=$id
+  return
+    <liga>
+      <nomeliga>{$c/nomeliga/text()}</nomeliga>
+      <imagemliga>{$c/imagemliga/text()}</imagemliga>
+    </liga>
+};
+
 declare function funcs:showInfoJog($idjog) as node() {
   <jogadores> {
       let $idjogador := $idjog
@@ -134,10 +159,53 @@ declare function funcs:showInfoJog($idjog) as node() {
   } </jogadores>
 };
 
+declare function funcs:edClube($idclube) as node() {
+  <clube> {
+    let $id := $idclube
+    for $c in doc('Ligas')/ligas/liga/clube
+    where $c/idclube/text()=$id
+    return
+      <club>
+        <idclube>{$c/idclube/text()}</idclube>
+        <nomeclube>{$c/nomeclube/text()}</nomeclube>
+        <nomecompleto>{$c/nomecompleto/text()}</nomecompleto>
+        <sigla>{$c/sigla/text()}</sigla>
+        <pontos>{$c/pontos/text()}</pontos>
+        <posicaoclube>{$c/posicaoclube/text()}</posicaoclube>
+        <imagemclube>{$c/imagemclube/text()}</imagemclube>
+        <vitorias>{$c/vitorias/text()}</vitorias>
+        <empates>{$c/empates/text()}</empates>
+        <derrotas>{$c/derrotas/text()}</derrotas>
+        <golosmarcados>{$c/golosmarcados/text()}</golosmarcados>
+        <golossofridos>{$c/golossofridos/text()}</golossofridos>
+        <cidade>{$c/cidade/text()}</cidade>
+        <estadio>{$c/estadio/text()}</estadio>
+        <anofundacao>{$c/anofundacao/text()}</anofundacao>
+        <presidente>{$c/presidente/text()}</presidente>
+        <treinador>{$c/treinador/text()}</treinador>
+      </club>
+  }</clube>
+};
+
+declare updating function funcs:addNewLiga($id, $id2, $bandeira, $nomeliga, $imagem, $pais) {
+  let $c := doc('Ligas')/ligas/liga
+  for $e in $c
+  where $e/idliga/text() = $id
+  return insert node (
+    <liga idliga='{$id2}'>
+        <idliga>{$id2}</idliga>
+        <imagempais>{$bandeira}</imagempais>
+        <nomeliga>{$nomeliga}</nomeliga>
+        <imagemliga>{$imagem}</imagemliga>
+        <pais>{$pais}</pais>
+    </liga>
+  ) after $e
+};
+
 declare function funcs:addLiga() as node() {
   <liga>{
   for $c in doc('Ligas')/ligas/liga
-  order by $c/idliga
+  order by number($c/idliga)
     return
     <l>
       <idliga>{$c/idliga/text()}</idliga>
@@ -153,4 +221,83 @@ declare updating function funcs:deleteJog($id) {
   for $d in $e//jogadores/jogador
   where $d/idjogador/text() = $j
   return delete node $d
+};
+
+declare updating function funcs:addNewClube($idliga, $id, $pontos, $posicao, $vitorias, $empates, $derrotas, $treinador, $golossofridos, $golosmarcados, $cidade, $anofund, $estadio, $presidente, $sigla, $nomecompleto, $nomeinc, $imagem) {
+  let $c := doc('Ligas')/ligas/liga
+  for $e in $c
+  where $e/idliga/text() = $idliga
+      return insert node (
+        <clube idclube='{$id}'>
+          <idclube>{$id}</idclube>
+          <nomeclube>{$nomeinc}</nomeclube>
+          <nomecompleto>{$nomecompleto}</nomecompleto>
+          <sigla>{$sigla}</sigla>
+          <imagemclube>{$imagem}</imagemclube>
+          <posicaoclube>{$posicao}</posicaoclube>
+          <pontos>{$pontos}</pontos>
+          <vitorias>{$vitorias}</vitorias>
+          <empates>{$empates}</empates>
+          <derrotas>{$derrotas}</derrotas>
+          <golosmarcados>{$golosmarcados}</golosmarcados>
+          <golossofridos>{$golossofridos}</golossofridos>
+          <cidade>{$cidade}</cidade>
+          <estadio>{$estadio}</estadio>
+          <anofundacao>{$anofund}</anofundacao>
+          <presidente>{$presidente}</presidente>
+          <treinador>{$treinador}</treinador>
+          <jogadores></jogadores>
+        </clube>
+      ) as last into $e
+};
+
+declare function funcs:orderClube() as node() {
+  <clube>{
+  for $c in doc('Ligas')/ligas/liga/clube
+  order by number($c/idclube)
+    return
+    <l>
+      <idclube>{$c/idclube/text()}</idclube>
+      </l>
+  }</clube>
+};
+
+declare function funcs:orderJogador() as node() {
+  <jogador>{
+  for $c in doc('Ligas')/ligas/liga/clube/jogadores/jogador
+  order by number($c/idjogador)
+    return
+      <idjogador>{$c/idjogador/text()}</idjogador>
+  }</jogador>
+};
+
+declare updating function funcs:deleteClube($idclube) {
+  let $c := doc('Ligas')/ligas/liga/clube
+  for $e in $c
+  where $e/idclube/text() = $idclube
+  return delete node $e
+};
+
+declare updating function funcs:deleteLiga($idliga) {
+  let $c := doc('Ligas')/ligas/liga
+  for $e in $c
+  where $e/idliga/text() = $idliga
+  return delete node $e
+};
+
+declare updating function funcs:addNewJogador($idclube, $idjogador, $nome, $numero, $nacionalidade, $posicao, $idade, $anteriores, $imagem) {
+  for $a in doc('Ligas')/ligas/liga/clube
+  where $a/idclube/text() = $idclube
+    return insert node (
+      <jogador idjogador='{$idjogador}'>
+          <idjogador>{$idjogador}</idjogador>
+          <nomejogador>{$nome}</nomejogador>
+          <numerojogador>{$numero}</numerojogador>
+          <nacionalidade>{$nacionalidade}</nacionalidade>
+          <posicaojogador>{$posicao}</posicaojogador>
+          <idade>{$idade}</idade>
+	  <imagemjogador>{$imagem}</imagemjogador>
+          <clubesanteriores>{$anteriores}</clubesanteriores>
+      </jogador>
+    ) as last into $a/jogadores
 };

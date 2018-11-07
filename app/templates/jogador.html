@@ -1,17 +1,25 @@
 {% extends "layout.html" %}
 {% block content %}
      {% load staticfiles %}
+
+    <div class="col-sm-6">
+        <div class="breadcrumbs-area clearfix">
+            <ul class="breadcrumbs pull-left">
+                <li><a href="index">Home</a></li>
+                <li><span>{{ nome }}</span></li>
+            </ul>
+        </div>
+    </div>
+
             <div class="row" >
                     <!-- basic modal start -->
                     <div class="col-lg-6 mt-5">
                         <div class="card" style="margin-left:160px;">
                             <div class="card-body" >
-<<<<<<< HEAD
+
                                 <h4 class="header-title">{{ nome }} </h4>
                                 <h5>Nº {{ numero }}</h5>
-=======
                                 <h4 class="header-title">{{ nome }}</h4>
->>>>>>> 3f36237d5f8709e7ca4bd696492dcce77381978b
                                 </br>
                                 <h6>Posição: {{ posicao }}</h6>
                                 <p>Idade: {{ idade }}</p>

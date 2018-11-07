@@ -27,4 +27,14 @@ urlpatterns = [
         path('editar_club', views.edit_club, name='edit_club'),
         path('edits_club', views.edits_clube, name='edits_club'),
         path('delete_jogador', views.delete_jogador, name='delete_jogador'),
+        path('feed', views.feed, name="feed"),
+        path('editar_jogador', views.editar_jogador, name="editar_jogador"),
+        path('edits_jogador', views.edits_jogador, name="edits_jogador"),
+        path('new_clube', views.new_clube, name="new_clube"),
+        path('news_clube', views.news_clube, name="news_clube"),
+        path('delete_clube', views.delete_clube, name="delete_clube"),
+        path('delete_liga', views.delete_liga, name="delete_liga"),
+        path('novo_jogador', views.novo_jogador, name="novo_jogador"),
+        path('new_jogador', views.new_jogador, name="new_jogador"),
+        path('xslt_run', views.trya, name="xslt_run")
 ]

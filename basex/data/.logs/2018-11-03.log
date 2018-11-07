@@ -1,0 +1,85 @@
+17:40:14.703	SERVER	admin	OK	Server was started (port: 1984).
+17:40:15.681	127.0.0.1:36150	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	59.43 ms
+17:40:16.224	127.0.0.1:36150	admin	OK	EXEC[0]	541.66 ms
+17:40:16.225	127.0.0.1:36150	admin	OK	CLOSE[0]	0.12 ms
+17:40:16.252	127.0.0.1:36150	admin	REQUEST	EXIT	27.29 ms
+17:40:16.252	127.0.0.1:36150	admin	OK		0.27 ms
+17:40:34.716	127.0.0.1:36234	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.37 ms
+17:40:34.771	127.0.0.1:36234	admin	OK	EXEC[0]	54.17 ms
+17:40:34.771	127.0.0.1:36234	admin	OK	CLOSE[0]	0.12 ms
+17:40:34.776	127.0.0.1:36234	admin	REQUEST	EXIT	0.35 ms
+17:40:34.776	127.0.0.1:36234	admin	OK		0.16 ms
+17:40:37.564	127.0.0.1:36290	admin	OK	QUERY[0] <clube> { let $id := 5 for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$id return <club> <idclube>{$c/idclube/text()}</idclube> <nomeclube>{$c/nomeclube/text()}</nomeclube> <nomecompleto>{$c/nomecompleto/text()}</nomecompleto> <sigla>{$c/sigla/text()}</sigla> <pontos>{$c/pontos/text()}</pontos> <posicaoclube>{$c/posicaoclube/text()}</posicaoclube> <imagemclube>{$c/imagemclube/text()}</imagemclube> <vitorias>{$c/vitorias/text()}</vitorias> <empates>{$c/empates/text()}</empates> <derrotas>{$c/derrotas/text()}</derrotas> <golosmarcados>{$c/golosmarcados/text()}</golosmarcados> <golossofridos>{$c/golossofridos/text()}</golossofridos> <cidade>{$c/cidade/text()}</cidade> <estadio>{$c/estadio/text()}</estadio> <anofundacao>{$c/anofundacao/text()}</anofundacao> <presidente>{$c/presidente/text()}</presidente> <treinador>{$c/treinador/text()}</treinador> </club> }</clube>	0.27 ms
+17:40:37.575	127.0.0.1:36290	admin	OK	EXEC[0]	10.73 ms
+17:40:37.575	127.0.0.1:36290	admin	OK	CLOSE[0]	0.08 ms
+17:40:37.582	127.0.0.1:36290	admin	REQUEST	EXIT	0.36 ms
+17:40:37.582	127.0.0.1:36290	admin	OK		0.17 ms
+17:40:49.405	127.0.0.1:36298	admin	REQUEST	EXIT	0.32 ms
+17:40:49.405	127.0.0.1:36298	admin	OK		0.16 ms
+17:46:44.355	127.0.0.1:36450	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.21 ms
+17:46:44.359	127.0.0.1:36450	admin	OK	EXEC[0]	3.74 ms
+17:46:44.359	127.0.0.1:36450	admin	OK	CLOSE[0]	0.07 ms
+17:46:44.361	127.0.0.1:36450	admin	REQUEST	EXIT	0.66 ms
+17:46:44.361	127.0.0.1:36450	admin	OK		0.21 ms
+17:46:47.105	127.0.0.1:36522	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.27 ms
+17:46:47.124	127.0.0.1:36522	admin	OK	EXEC[0]	18.93 ms
+17:46:47.125	127.0.0.1:36522	admin	OK	CLOSE[0]	0.08 ms
+17:46:47.127	127.0.0.1:36522	admin	REQUEST	EXIT	0.44 ms
+17:46:47.127	127.0.0.1:36522	admin	OK		0.25 ms
+17:46:51.020	127.0.0.1:36562	admin	OK	QUERY[0] <clube> { let $id := 4 for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$id return <club> <idclube>{$c/idclube/text()}</idclube> <nomeclube>{$c/nomeclube/text()}</nomeclube> <nomecompleto>{$c/nomecompleto/text()}</nomecompleto> <sigla>{$c/sigla/text()}</sigla> <pontos>{$c/pontos/text()}</pontos> <posicaoclube>{$c/posicaoclube/text()}</posicaoclube> <imagemclube>{$c/imagemclube/text()}</imagemclube> <vitorias>{$c/vitorias/text()}</vitorias> <empates>{$c/empates/text()}</empates> <derrotas>{$c/derrotas/text()}</derrotas> <golosmarcados>{$c/golosmarcados/text()}</golosmarcados> <golossofridos>{$c/golossofridos/text()}</golossofridos> <cidade>{$c/cidade/text()}</cidade> <estadio>{$c/estadio/text()}</estadio> <anofundacao>{$c/anofundacao/text()}</anofundacao> <presidente>{$c/presidente/text()}</presidente> <treinador>{$c/treinador/text()}</treinador> </club> }</clube>	0.28 ms
+17:46:51.028	127.0.0.1:36562	admin	OK	EXEC[0]	8.35 ms
+17:46:51.028	127.0.0.1:36562	admin	OK	CLOSE[0]	0.07 ms
+17:46:51.036	127.0.0.1:36562	admin	REQUEST	EXIT	0.47 ms
+17:46:51.036	127.0.0.1:36562	admin	OK		0.25 ms
+17:46:56.508	127.0.0.1:36576	admin	REQUEST	EXIT	0.47 ms
+17:46:56.508	127.0.0.1:36576	admin	OK		0.19 ms
+17:47:19.054	127.0.0.1:36638	admin	OK	QUERY[0] <clube> { let $id := 17 for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$id return <club> <idclube>{$c/idclube/text()}</idclube> <nomeclube>{$c/nomeclube/text()}</nomeclube> <nomecompleto>{$c/nomecompleto/text()}</nomecompleto> <sigla>{$c/sigla/text()}</sigla> <pontos>{$c/pontos/text()}</pontos> <posicaoclube>{$c/posicaoclube/text()}</posicaoclube> <imagemclube>{$c/imagemclube/text()}</imagemclube> <vitorias>{$c/vitorias/text()}</vitorias> <empates>{$c/empates/text()}</empates> <derrotas>{$c/derrotas/text()}</derrotas> <golosmarcados>{$c/golosmarcados/text()}</golosmarcados> <golossofridos>{$c/golossofridos/text()}</golossofridos> <cidade>{$c/cidade/text()}</cidade> <estadio>{$c/estadio/text()}</estadio> <anofundacao>{$c/anofundacao/text()}</anofundacao> <presidente>{$c/presidente/text()}</presidente> <treinador>{$c/treinador/text()}</treinador> </club> }</clube>	0.22 ms
+17:47:19.062	127.0.0.1:36638	admin	OK	EXEC[0]	8.11 ms
+17:47:19.063	127.0.0.1:36638	admin	OK	CLOSE[0]	0.08 ms
+17:47:19.064	127.0.0.1:36638	admin	REQUEST	EXIT	0.45 ms
+17:47:19.064	127.0.0.1:36638	admin	OK		0.23 ms
+17:47:19.068	127.0.0.1:36640	admin	OK	QUERY[0] let $s := 17 for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$s return for $d in $c//jogadores return $d	0.21 ms
+17:47:19.088	127.0.0.1:36640	admin	OK	EXEC[0]	19.7 ms
+17:47:19.088	127.0.0.1:36640	admin	OK	CLOSE[0]	0.07 ms
+17:47:19.089	127.0.0.1:36640	admin	REQUEST	EXIT	0.38 ms
+17:47:19.089	127.0.0.1:36640	admin	OK		0.2 ms
+17:47:23.240	127.0.0.1:36664	admin	OK	QUERY[0] <clube> { let $id := 4 for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$id return <club> <idclube>{$c/idclube/text()}</idclube> <nomeclube>{$c/nomeclube/text()}</nomeclube> <nomecompleto>{$c/nomecompleto/text()}</nomecompleto> <sigla>{$c/sigla/text()}</sigla> <pontos>{$c/pontos/text()}</pontos> <posicaoclube>{$c/posicaoclube/text()}</posicaoclube> <imagemclube>{$c/imagemclube/text()}</imagemclube> <vitorias>{$c/vitorias/text()}</vitorias> <empates>{$c/empates/text()}</empates> <derrotas>{$c/derrotas/text()}</derrotas> <golosmarcados>{$c/golosmarcados/text()}</golosmarcados> <golossofridos>{$c/golossofridos/text()}</golossofridos> <cidade>{$c/cidade/text()}</cidade> <estadio>{$c/estadio/text()}</estadio> <anofundacao>{$c/anofundacao/text()}</anofundacao> <presidente>{$c/presidente/text()}</presidente> <treinador>{$c/treinador/text()}</treinador> </club> }</clube>	0.25 ms
+17:47:23.246	127.0.0.1:36664	admin	OK	EXEC[0]	6.23 ms
+17:47:23.246	127.0.0.1:36664	admin	OK	CLOSE[0]	0.07 ms
+17:47:23.247	127.0.0.1:36664	admin	REQUEST	EXIT	0.41 ms
+17:47:23.247	127.0.0.1:36664	admin	OK		0.26 ms
+17:47:23.256	127.0.0.1:36666	admin	OK	QUERY[0] let $s := 4 for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$s return for $d in $c//jogadores return $d	1.14 ms
+17:47:23.268	127.0.0.1:36666	admin	OK	EXEC[0]	12.4 ms
+17:47:23.269	127.0.0.1:36666	admin	OK	CLOSE[0]	0.1 ms
+17:47:23.276	127.0.0.1:36666	admin	REQUEST	EXIT	0.46 ms
+17:47:23.276	127.0.0.1:36666	admin	OK		0.26 ms
+17:47:44.326	127.0.0.1:36706	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.23 ms
+17:47:44.337	127.0.0.1:36706	admin	OK	EXEC[0]	11.11 ms
+17:47:44.338	127.0.0.1:36706	admin	OK	CLOSE[0]	0.07 ms
+17:47:44.338	127.0.0.1:36706	admin	REQUEST	EXIT	0.31 ms
+17:47:44.338	127.0.0.1:36706	admin	OK		0.16 ms
+17:47:47.789	127.0.0.1:36752	admin	OK	QUERY[0] <clube> { let $id := for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$id return <club> <idclube>{$c/idclube/text()}</idclube> <nomeclube>{$c/nomeclube/text()}</nomeclube> <nomecompleto>{$c/nomecompleto/text()}</nomecompleto> <sigla>{$c/sigla/text()}</sigla> <pontos>{$c/pontos/text()}</pontos> <posicaoclube>{$c/posicaoclube/text()}</posicaoclube> <imagemclube>{$c/imagemclube/text()}</imagemclube> <vitorias>{$c/vitorias/text()}</vitorias> <empates>{$c/empates/text()}</empates> <derrotas>{$c/derrotas/text()}</derrotas> <golosmarcados>{$c/golosmarcados/text()}</golosmarcados> <golossofridos>{$c/golossofridos/text()}</golossofridos> <cidade>{$c/cidade/text()}</cidade> <estadio>{$c/estadio/text()}</estadio> <anofundacao>{$c/anofundacao/text()}</anofundacao> <presidente>{$c/presidente/text()}</presidente> <treinador>{$c/treinador/text()}</treinador> </club> }</clube>	0.22 ms
+17:47:47.840	127.0.0.1:36752	admin	REQUEST	EXEC[0]	50.84 ms
+17:47:47.840	127.0.0.1:36752	admin	ERROR	Stopped at ., 25/21: [XPST0003] Incomplete FLWOR expression: expecting 'return'.	0.12 ms
+17:47:47.841	127.0.0.1:36752	admin	REQUEST	EXIT	0.29 ms
+17:47:47.841	127.0.0.1:36752	admin	OK		0.22 ms
+17:48:59.309	127.0.0.1:36774	admin	OK	QUERY[0] <ligas> { for $c in doc('Ligas')/ligas/liga return <liga> <idliga>{$c/idliga/text()}</idliga> <imagemliga>{$c/imagemliga/text()}</imagemliga> <imagempais>{$c/imagempais/text()}</imagempais> <pais>{$c/pais/text()}</pais> <nomeliga>{$c/nomeliga/text()}</nomeliga> </liga> } </ligas>	0.24 ms
+17:48:59.316	127.0.0.1:36774	admin	OK	EXEC[0]	6.61 ms
+17:48:59.316	127.0.0.1:36774	admin	OK	CLOSE[0]	0.07 ms
+17:48:59.317	127.0.0.1:36774	admin	REQUEST	EXIT	0.44 ms
+17:48:59.317	127.0.0.1:36774	admin	OK		0.25 ms
+17:49:08.606	127.0.0.1:36798	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.19 ms
+17:49:08.616	127.0.0.1:36798	admin	OK	EXEC[0]	9.09 ms
+17:49:08.616	127.0.0.1:36798	admin	OK	CLOSE[0]	0.05 ms
+17:49:08.616	127.0.0.1:36798	admin	REQUEST	EXIT	0.34 ms
+17:49:08.616	127.0.0.1:36798	admin	OK		0.16 ms
+17:49:32.851	127.0.0.1:36816	admin	OK	QUERY[0] <liga> { let $idliga := 1 for $c in doc('Ligas')/ligas/liga where $c/idliga/text() = $idliga return for $a in $c//clube return <clube> <idclube>{$a/idclube/text()}</idclube> <nomeclube>{$a/nomeclube/text()}</nomeclube> <vitorias>{$a/vitorias/text()}</vitorias> <empates>{$a/empates/text()}</empates> <derrotas>{$a/derrotas/text()}</derrotas> <posicaoclube>{$a/posicaoclube/text()}</posicaoclube> <imagemclube>{$a/imagemclube/text()}</imagemclube> <pontos>{$a/pontos/text()}</pontos> <golosmarcados>{$a/golosmarcados/text()}</golosmarcados> <golossofridos>{$a/golossofridos/text()}</golossofridos> </clube> } </liga>	0.18 ms
+17:49:32.858	127.0.0.1:36816	admin	OK	EXEC[0]	6.77 ms
+17:49:32.858	127.0.0.1:36816	admin	OK	CLOSE[0]	0.05 ms
+17:49:32.859	127.0.0.1:36816	admin	REQUEST	EXIT	0.31 ms
+17:49:32.859	127.0.0.1:36816	admin	OK		0.18 ms
+17:49:43.565	127.0.0.1:36828	admin	OK	QUERY[0] <clube> { let $id := for $c in doc('Ligas')/ligas/liga/clube where $c/idclube/text()=$id return <club> <idclube>{$c/idclube/text()}</idclube> <nomeclube>{$c/nomeclube/text()}</nomeclube> <nomecompleto>{$c/nomecompleto/text()}</nomecompleto> <sigla>{$c/sigla/text()}</sigla> <pontos>{$c/pontos/text()}</pontos> <posicaoclube>{$c/posicaoclube/text()}</posicaoclube> <imagemclube>{$c/imagemclube/text()}</imagemclube> <vitorias>{$c/vitorias/text()}</vitorias> <empates>{$c/empates/text()}</empates> <derrotas>{$c/derrotas/text()}</derrotas> <golosmarcados>{$c/golosmarcados/text()}</golosmarcados> <golossofridos>{$c/golossofridos/text()}</golossofridos> <cidade>{$c/cidade/text()}</cidade> <estadio>{$c/estadio/text()}</estadio> <anofundacao>{$c/anofundacao/text()}</anofundacao> <presidente>{$c/presidente/text()}</presidente> <treinador>{$c/treinador/text()}</treinador> </club> }</clube>	0.22 ms
+17:49:43.567	127.0.0.1:36828	admin	REQUEST	EXEC[0]	2.08 ms
+17:49:43.567	127.0.0.1:36828	admin	ERROR	Stopped at ., 25/21: [XPST0003] Incomplete FLWOR expression: expecting 'return'.	0.11 ms
+17:49:43.572	127.0.0.1:36828	admin	REQUEST	EXIT	0.45 ms
+17:49:43.572	127.0.0.1:36828	admin	OK		0.22 ms
